@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import ProductCard from "./ProductCard";
 import SiteHeader from "./SiteHeader";
+import { IconClose } from "./Icons";
 
 type Product = {
   id: string; name: string; price: number; stock: number; category_id: string;
@@ -315,7 +316,7 @@ export default function CatalogClient({
         const at = Object.entries(qv.attrs || {});
         return (
           <div className="qv on">
-            <button className="qv__close" onClick={() => setQv(null)}>✕</button>
+            <button className="qv__close" onClick={() => setQv(null)} aria-label="Закрыть"><IconClose className="h-5 w-5" /></button>
             <div className="qv__in">
               <div className="qv__gal">
                 <div className="main" style={qvImg ? { backgroundImage: `url('${qvImg}')` } : undefined} />

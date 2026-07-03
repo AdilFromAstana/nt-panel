@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { IconCheck } from "./Icons";
 
 export default function AddToCart({ id, qty = 1, className }: { id: string; qty?: number; className?: string }) {
   const [added, setAdded] = useState(false);
@@ -16,7 +17,11 @@ export default function AddToCart({ id, qty = 1, className }: { id: string; qty?
   }
   return (
     <button className={className} onClick={add}>
-      {added ? "✓ Добавлено" : "В корзину"}
+      {added ? (
+        <span className="inline-flex items-center justify-center gap-1.5"><IconCheck className="h-4 w-4" /> Добавлено</span>
+      ) : (
+        "В корзину"
+      )}
     </button>
   );
 }

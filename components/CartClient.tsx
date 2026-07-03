@@ -4,6 +4,7 @@ import Link from "next/link";
 import SiteHeader from "./SiteHeader";
 import { getCart, setQty, removeFromCart, clearCart } from "@/lib/cart";
 import type { MiniProduct } from "@/lib/data";
+import { IconCart } from "./Icons";
 
 type Tier = { min_amount: number; percent: number };
 
@@ -62,7 +63,7 @@ export default function CartClient({ minis, tiers }: { minis: MiniProduct[]; tie
 
         {!ready ? null : lines.length === 0 ? (
           <div className="rounded-2xl border border-gray-100 bg-gray-50 py-20 text-center">
-            <div className="text-5xl">🛒</div>
+            <IconCart className="mx-auto h-14 w-14 text-gray-300" />
             <p className="mt-4 text-lg font-semibold">Корзина пуста</p>
             <p className="mt-1 text-sm text-gray-400">Добавьте товары из каталога</p>
             <Link href="/catalog/hybrid" className="mt-6 inline-block rounded-xl bg-green-700 px-8 py-3 font-semibold text-white transition hover:brightness-95">

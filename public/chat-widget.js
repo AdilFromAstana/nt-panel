@@ -189,7 +189,7 @@
       a.addEventListener("click", function () { track("card_click", { id: p.id, name: p.name }); });
       a.querySelector(".ntc-add").addEventListener("click", function (e) {
         e.preventDefault(); e.stopPropagation();
-        addToCart(p); track("add_cart", { id: p.id, name: p.name }); this.textContent = "✓ добавлено";
+        addToCart(p); track("add_cart", { id: p.id, name: p.name }); this.textContent = "Добавлено";
       });
       wrap.appendChild(a);
     });
@@ -200,9 +200,9 @@
     });
     if (hasPanel) {
       actionRow([
-        { label: "➕ Подобрать профиль", onClick: function () { track("upsell", { kind: "профиль" }); send("подбери алюминиевый профиль к этим панелям"); } },
-        { label: "➕ Чем крепить", onClick: function () { track("upsell", { kind: "крепёж" }); send("что нужно для крепления панелей"); } },
-        { label: "% Скидка на объём", onClick: function () { track("upsell", { kind: "скидка" }); send("какая у вас скидка на объём?"); } },
+        { label: "Подобрать профиль", onClick: function () { track("upsell", { kind: "профиль" }); send("подбери алюминиевый профиль к этим панелям"); } },
+        { label: "Чем крепить", onClick: function () { track("upsell", { kind: "крепёж" }); send("что нужно для крепления панелей"); } },
+        { label: "Скидка на объём", onClick: function () { track("upsell", { kind: "скидка" }); send("какая у вас скидка на объём?"); } },
       ]);
     }
     body.scrollTop = body.scrollHeight;
@@ -272,8 +272,8 @@
     if (p.indexOf("/product/") === 0)
       return "Этот товар в наличии. Подобрать похожие или узнать про скидку на объём?";
     if (p.indexOf("/catalog") === 0)
-      return "Помогу подобрать под вашу площадь и бюджет 👋 Спросите меня!";
-    return "Не знаете, с чего начать? Подберу панели за минуту 👋";
+      return "Помогу подобрать под вашу площадь и бюджет. Спросите меня!";
+    return "Не знаете, с чего начать? Подберу панели за минуту.";
   }
 
   function showNudge() {
@@ -297,9 +297,9 @@
 
   function exitOffer() {
     toggle(true);
-    bubble("b", "Уходите? Не теряйте подборку — задайте вопрос здесь или напишите менеджеру в WhatsApp 👇");
+    bubble("b", "Уходите? Не теряйте подборку — задайте вопрос здесь или напишите менеджеру в WhatsApp.");
     actionRow([
-      { label: "💬 Менеджер в WhatsApp", onClick: openWA },
+      { label: "Менеджер в WhatsApp", onClick: openWA },
       { label: "Подобрать панели", onClick: function () { send("подбери популярные панели в наличии"); } },
     ]);
   }

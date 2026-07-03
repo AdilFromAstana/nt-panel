@@ -1,5 +1,6 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
+import { IconChart, IconSearch, IconWarning, IconClick, IconList } from "@/components/Icons";
 
 type Summary = {
   total_events: number; chats: number; opens: number; whatsapp: number; add_cart: number;
@@ -50,7 +51,7 @@ export default function AnalyticsPage() {
   return (
     <div className="bg-[#f4f6fa] min-h-screen text-gray-900">
       <header className="bg-gradient-to-r from-[#1f6feb] to-[#0a3d8f] text-white px-5 py-4 flex items-center gap-3">
-        <h1 className="text-lg font-bold m-0">📊 Аналитика ИИ-чата</h1>
+        <h1 className="m-0 inline-flex items-center gap-2 text-lg font-bold"><IconChart className="h-5 w-5" /> Аналитика ИИ-чата</h1>
         <span className="text-[12.5px] opacity-85 ml-auto">
           {d?.first ? `${d.first.replace("T", " ")} — ${d.last?.replace("T", " ")}` : "нет событий"}
         </span>
@@ -71,10 +72,10 @@ export default function AnalyticsPage() {
               <Card n={d.exit_intent} l="Exit-intent" />
             </div>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="text-sm font-bold mb-2.5">🔎 Топ запросов</h2><Bars pairs={d.top_queries} /></div>
-              <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="text-sm font-bold mb-2.5">⚠️ Запросы без результата</h2><Bars pairs={d.zero_result_queries} red /></div>
-              <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="text-sm font-bold mb-2.5">👆 Клики по товарам</h2><Bars pairs={d.top_products} /></div>
-              <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="text-sm font-bold mb-2.5">📋 Все события</h2><Bars pairs={d.by_type} /></div>
+              <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="mb-2.5 inline-flex items-center gap-1.5 text-sm font-bold"><IconSearch className="h-4 w-4" /> Топ запросов</h2><Bars pairs={d.top_queries} /></div>
+              <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="mb-2.5 inline-flex items-center gap-1.5 text-sm font-bold"><IconWarning className="h-4 w-4" /> Запросы без результата</h2><Bars pairs={d.zero_result_queries} red /></div>
+              <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="mb-2.5 inline-flex items-center gap-1.5 text-sm font-bold"><IconClick className="h-4 w-4" /> Клики по товарам</h2><Bars pairs={d.top_products} /></div>
+              <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="mb-2.5 inline-flex items-center gap-1.5 text-sm font-bold"><IconList className="h-4 w-4" /> Все события</h2><Bars pairs={d.by_type} /></div>
             </div>
           </>
         )}

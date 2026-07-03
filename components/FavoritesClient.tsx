@@ -5,6 +5,7 @@ import SiteHeader from "./SiteHeader";
 import ProductCard from "./ProductCard";
 import { getFavs, toggleFav, addToCart } from "@/lib/cart";
 import type { MiniProduct } from "@/lib/data";
+import { IconHeart } from "./Icons";
 
 export default function FavoritesClient({ minis }: { minis: MiniProduct[] }) {
   const byId = new Map(minis.map((m) => [String(m.id), m]));
@@ -44,9 +45,11 @@ export default function FavoritesClient({ minis }: { minis: MiniProduct[] }) {
 
         {!ready ? null : items.length === 0 ? (
           <div className="rounded-2xl border border-gray-100 bg-gray-50 py-20 text-center">
-            <div className="text-5xl">🤍</div>
+            <IconHeart className="mx-auto h-14 w-14 text-gray-300" />
             <p className="mt-4 text-lg font-semibold">В избранном пока пусто</p>
-            <p className="mt-1 text-sm text-gray-400">Нажимайте ♥ на карточках товаров</p>
+            <p className="mt-1 inline-flex items-center gap-1 text-sm text-gray-400">
+              Нажимайте <IconHeart className="inline h-4 w-4" /> на карточках товаров
+            </p>
             <Link href="/catalog/hybrid" className="mt-6 inline-block rounded-xl bg-green-700 px-8 py-3 font-semibold text-white transition hover:brightness-95">
               В каталог
             </Link>

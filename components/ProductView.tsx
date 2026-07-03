@@ -5,6 +5,7 @@ import AddToCart from "./AddToCart";
 import SiteHeader from "./SiteHeader";
 import { getFavs, toggleFav } from "@/lib/cart";
 import type { VariantOption } from "@/lib/data";
+import { IconHeart, IconPlay, IconTruck, IconCard, IconShield } from "./Icons";
 
 type Product = {
   id: string; name: string; price: number; stock: number;
@@ -24,9 +25,9 @@ function badge(stock: number) {
 }
 
 const TRUST = [
-  { icon: "🚚", title: "Доставка по РК", sub: "1–3 дня" },
-  { icon: "💳", title: "Kaspi Рассрочка", sub: "0-0-12" },
-  { icon: "✅", title: "Гарантия качества", sub: "Оригинал" },
+  { Icon: IconTruck, title: "Доставка по РК", sub: "1–3 дня" },
+  { Icon: IconCard, title: "Kaspi Рассрочка", sub: "0-0-12" },
+  { Icon: IconShield, title: "Гарантия качества", sub: "Оригинал" },
 ];
 
 export default function ProductView({ product, variants }: { product: Product; variants?: VariantGroup }) {
@@ -94,7 +95,7 @@ export default function ProductView({ product, variants }: { product: Product; v
                     <button key={s} onClick={() => setMain(s)}
                       className={`relative h-16 w-16 overflow-hidden rounded-lg border ${s === main ? "border-green-600 ring-1 ring-green-600" : "border-gray-200"}`}>
                       <video src={s} muted playsInline preload="metadata" className="h-full w-full object-cover" />
-                      <span className="absolute inset-0 flex items-center justify-center bg-black/30 text-lg text-white">▶</span>
+                      <span className="absolute inset-0 flex items-center justify-center bg-black/30 text-white"><IconPlay className="h-5 w-5" /></span>
                     </button>
                   ) : (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -125,17 +126,17 @@ export default function ProductView({ product, variants }: { product: Product; v
                 <button onClick={() => setQty(qty + 1)} className="h-11 w-11 text-lg text-gray-500 transition hover:text-gray-900">+</button>
               </div>
               <AddToCart id={product.id} qty={qty} className="flex-1 rounded-xl bg-green-700 px-8 py-3.5 font-semibold text-white transition hover:brightness-95 md:flex-none md:w-56" />
-              <button onClick={() => setFav(!!toggleFav(product.id)[product.id])}
+              <button onClick={() => setFav(!!toggleFav(product.id)[product.id])} aria-label="В избранное"
                 className={`grid h-12 w-12 place-items-center rounded-xl border transition ${fav ? "border-red-200 text-red-500" : "border-gray-200 text-gray-400 hover:text-red-500"}`}>
-                {fav ? "♥" : "♡"}
+                <IconHeart className="h-6 w-6" filled={fav} />
               </button>
             </div>
 
             <div className="mb-7 grid grid-cols-3 gap-2">
               {TRUST.map((t) => (
                 <div key={t.title} className="rounded-xl border border-gray-100 bg-gray-50 p-2.5 text-center">
-                  <div className="text-lg">{t.icon}</div>
-                  <div className="mt-0.5 text-[11px] font-semibold leading-tight text-gray-900">{t.title}</div>
+                  <t.Icon className="mx-auto h-6 w-6 text-gray-700" />
+                  <div className="mt-1 text-[11px] font-semibold leading-tight text-gray-900">{t.title}</div>
                   <div className="text-[10px] text-gray-400">{t.sub}</div>
                 </div>
               ))}

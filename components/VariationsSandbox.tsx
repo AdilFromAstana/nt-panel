@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { IconPlay, IconTruck, IconCard, IconShield, IconHeart } from "./Icons";
 
 type Member = {
   id: string;
@@ -46,7 +47,7 @@ function Thumb({ src, active, onClick }: { src: string; active: boolean; onClick
       {isVideo(src) ? (
         <>
           <video src={src} muted playsInline preload="metadata" className="h-full w-full object-cover" />
-          <span className="absolute inset-0 flex items-center justify-center bg-black/25 text-white">▶</span>
+          <span className="absolute inset-0 flex items-center justify-center bg-black/25 text-white"><IconPlay className="h-5 w-5" /></span>
         </>
       ) : (
         <span className="block h-full w-full bg-[#f3f1ec] bg-cover bg-center" style={{ backgroundImage: `url('${src}')` }} />
@@ -110,9 +111,9 @@ function Qty({ qty, setQty }: { qty: number; setQty: (n: number) => void }) {
 }
 
 const TRUST = [
-  { icon: "🚚", title: "Доставка по РК", sub: "1–3 дня" },
-  { icon: "💳", title: "Kaspi Рассрочка", sub: "0-0-12" },
-  { icon: "✅", title: "Гарантия качества", sub: "Оригинал" },
+  { Icon: IconTruck, title: "Доставка по РК", sub: "1–3 дня" },
+  { Icon: IconCard, title: "Kaspi Рассрочка", sub: "0-0-12" },
+  { Icon: IconShield, title: "Гарантия качества", sub: "Оригинал" },
 ];
 
 function TrustRow() {
@@ -120,8 +121,8 @@ function TrustRow() {
     <div className="grid grid-cols-3 gap-2">
       {TRUST.map((t) => (
         <div key={t.title} className="rounded-xl border border-gray-100 bg-gray-50 p-2.5 text-center">
-          <div className="text-lg">{t.icon}</div>
-          <div className="mt-0.5 text-[11px] font-semibold leading-tight text-gray-900">{t.title}</div>
+          <t.Icon className="mx-auto h-6 w-6 text-gray-700" />
+          <div className="mt-1 text-[11px] font-semibold leading-tight text-gray-900">{t.title}</div>
           <div className="text-[10px] text-gray-400">{t.sub}</div>
         </div>
       ))}
@@ -207,7 +208,7 @@ export default function VariationsSandbox({ axis, members }: { axis: string; mem
           <div className="mb-5 flex items-center gap-3">
             <Qty qty={qty} setQty={setQty} />
             <button className="flex-1 rounded-xl bg-green-700 px-8 py-3.5 font-semibold text-white transition hover:brightness-95">В корзину</button>
-            <button className="grid h-12 w-12 place-items-center rounded-xl border border-gray-200 text-gray-400 transition hover:text-red-500">♡</button>
+            <button aria-label="В избранное" className="grid h-12 w-12 place-items-center rounded-xl border border-gray-200 text-gray-400 transition hover:text-red-500"><IconHeart className="h-6 w-6" /></button>
           </div>
           <div className="mb-6"><TrustRow /></div>
           <Specs attrs={p.attrs} />

@@ -1,3 +1,5 @@
+import { IconHeart, IconEye } from "./Icons";
+
 type Props = {
   id: string;
   name: string;
@@ -35,11 +37,11 @@ export default function ProductCard(p: Props) {
           type="button"
           aria-label="В избранное"
           onClick={p.onFav}
-          className={`absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-gray-100 bg-white/80 text-lg leading-none backdrop-blur-sm transition hover:scale-110 ${
+          className={`absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-gray-100 bg-white/80 leading-none backdrop-blur-sm transition hover:scale-110 ${
             p.fav ? "text-red-500" : "text-gray-300 hover:text-red-400"
           }`}
         >
-          ♥
+          <IconHeart className="h-5 w-5" filled={p.fav} />
         </button>
       )}
 
@@ -91,9 +93,9 @@ export default function ProductCard(p: Props) {
                 title="Быстрый просмотр"
                 aria-label="Быстрый просмотр"
                 onClick={p.onQuickView}
-                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gray-100 text-lg transition hover:bg-gray-200 active:scale-95"
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gray-100 text-gray-600 transition hover:bg-gray-200 active:scale-95"
               >
-                👁
+                <IconEye className="h-5 w-5" />
               </button>
             )}
           </div>
