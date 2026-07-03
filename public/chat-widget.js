@@ -120,15 +120,16 @@
     return '<div class="ntc-st ntc-st-in">В наличии</div>';
   }
 
-  function addToCart(p) {
-    var cart = [];
-    try { cart = JSON.parse(localStorage.getItem(CART_KEY) || "[]"); } catch (e) {}
-    var row = cart.find(function (x) { return String(x.id) === String(p.id); });
-    if (row) { row.qty = (row.qty || 1) + 1; }
-    else { cart.push({ id: p.id, name: p.name, price: p.price, preview_image: p.preview_image, qty: 1 }); }
-    localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  function cartAdd(id, qty) {
+    var c = {};
+    try { c = JSON.parse(localStorage.getItem(CART_KEY) || "{}"); } catch (e) { c = {}; }
+    if (!c || typeof c !== "object" || Array.isArray(c)) c = {};
+    var q = Math.max(1, qty || 1);
+    c[id] = (typeof c[id] === "number" ? c[id] : 0) + q;
+    localStorage.setItem(CART_KEY, JSON.stringify(c));
     window.dispatchEvent(new Event("ntcart-change"));
   }
+  function addToCart(p) { cartAdd(p.id, 1); }
 
   function bubble(role, text) {
     var d = document.createElement("div");
@@ -156,6 +157,34 @@
   }
 
   function openWA() { track("whatsapp", { q: lastUserText }); window.open(buildWA(), "_blank"); }
+
+  function handleActions(actions) {
+    if (!actions || !actions.length) return;
+    actions.forEach(function (a) {
+      if (!a || !a.type) return;
+      if (a.type === "add_to_cart") applyAddToCart(a.items);
+      else if (a.type === "lead") applyLead(a);
+    });
+  }
+  function applyAddToCart(items) {
+    if (!items || !items.length) return;
+    var qty = 0;
+    items.forEach(function (it) {
+      if (it && it.id) { var q = Math.max(1, it.qty || 1); cartAdd(it.id, q); qty += q; }
+    });
+    if (!qty) return;
+    track("bot_add_to_cart", { positions: items.length, qty: qty });
+    bubble("b", "Добавил в корзину. Оформить заказ?");
+    actionRow([{ label: "Перейти в корзину", onClick: function () { location.href = "/cart"; } }]);
+  }
+  function applyLead(a) {
+    track("lead", { name: a.name || "", phone: a.phone || "", summary: a.summary || "" });
+    bubble("b", "Спасибо! Передал менеджеру — он свяжется с вами. Можно сразу продолжить в WhatsApp.");
+    var lines = ["Здравствуйте! Заявка с сайта NT Panel.", "Имя: " + (a.name || "—"), "Телефон: " + (a.phone || "—")];
+    if (a.summary) lines.push("Интересует: " + a.summary);
+    var url = "https://wa.me/" + WA_PHONE + "?text=" + encodeURIComponent(lines.join("\n"));
+    actionRow([{ label: "Открыть WhatsApp", onClick: function () { window.open(url, "_blank"); } }]);
+  }
 
   function actionRow(items) {
     var c = document.createElement("div");
@@ -255,6 +284,7 @@
         bubble("b", reply);
         history.push({ role: "model", text: reply });
         renderCards(data.products);
+        handleActions(data.actions);
       })
       .catch(function () {
         typing.remove();

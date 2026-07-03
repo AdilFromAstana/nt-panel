@@ -6,6 +6,7 @@ const LOG = path.join(process.cwd(), "data", "analytics.jsonl");
 export const ALLOWED_EVENTS = new Set([
   "open", "card_click", "add_cart", "upsell", "whatsapp",
   "nudge_shown", "nudge_click", "exit_intent", "chat",
+  "lead", "bot_add_to_cart",
 ]);
 
 export function logEvent(ev: string, data?: Record<string, unknown>) {

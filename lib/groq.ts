@@ -62,9 +62,12 @@ function systemPrompt(): string {
     "3) РАСЧЁТ: как только знаешь площадь и товар — вызови calc_quantity. Площадь одной панели посчитай из её " +
     "размера (переведи мм в м², напр. 140×3000 мм = 0.42 м²), передай цену. Скажи «нужно N шт на M м² ≈ СУММА ₸».\n" +
     "4) КОМПЛЕКТ: после панелей вызови accessories_for и предложи профиль + клей/крепёж одной фразой.\n" +
-    "5) ЗАКРЫТИЕ: мягко предложи ОДНО действие — добавить в корзину или оставить телефон менеджеру для точного расчёта " +
-    "и брони. Не дави, один призыв в конце.\n" +
-    "Отвечай короткими шагами, не вываливай всё сразу."
+    "5) ЗАКРЫТИЕ: мягко предложи ОДНО действие в конце.\n" +
+    "   - Если человек согласен купить/оформить — вызови add_to_cart со списком выбранных товаров и количеством " +
+    "(из расчёта), затем подтверди и предложи перейти к оформлению.\n" +
+    "   - Если не готов сам, хочет уточнить или просит менеджера — попроси имя и телефон ОДНОЙ фразой, затем вызови " +
+    "save_lead(name, phone, summary). После — скажи, что менеджер свяжется.\n" +
+    "Не дави, один призыв за раз. Отвечай короткими шагами, не вываливай всё сразу."
   );
 }
 
@@ -124,7 +127,50 @@ const ACCESSORY_TOOL = {
   },
 };
 
+const ADDCART_TOOL = {
+  name: "add_to_cart",
+  description: "Добавить выбранные товары в корзину покупателя. Вызывай, когда человек согласился купить/оформить. Количество бери из расчёта (calc_quantity).",
+  parameters: {
+    type: "object",
+    properties: {
+      items: {
+        type: "array",
+        description: "Позиции для добавления",
+        items: {
+          type: "object",
+          properties: {
+            product: { type: "string", description: "Название или модель товара" },
+            quantity: { type: ["number", "string"], description: "Количество, шт" },
+          },
+          required: ["product"],
+        },
+      },
+    },
+    required: ["items"],
+  },
+};
+
+const LEAD_TOOL = {
+  name: "save_lead",
+  description: "Сохранить контакт покупателя для менеджера. Вызывай, когда человек оставил имя и телефон или просит перезвонить/связаться.",
+  parameters: {
+    type: "object",
+    properties: {
+      name: { type: "string", description: "Имя покупателя" },
+      phone: { type: "string", description: "Телефон покупателя" },
+      summary: { type: "string", description: "Что подбирали / суть запроса" },
+    },
+    required: ["phone"],
+  },
+};
+
 type Card = ReturnType<typeof toCard>;
+
+function resolveProduct(ref: string) {
+  const q = String(ref || "").trim().toLowerCase();
+  if (!q) return undefined;
+  return products().find((p) => String(p.id) === q) || products().find((p) => (p.name || "").toLowerCase().includes(q));
+}
 
 function sizeOf(attrs: Record<string, string>): string {
   const k = Object.keys(attrs || {}).find((x) => /размер/i.test(x));
@@ -135,14 +181,40 @@ function toNum(v: unknown): number {
   return Number(String(v ?? "").replace(/[^\d.]/g, "")) || 0;
 }
 
-function runTool(name: string, args: Record<string, unknown>): [Record<string, unknown>, Card[] | null] {
+function runTool(
+  name: string,
+  args: Record<string, unknown>
+): [Record<string, unknown>, Card[] | null, Record<string, unknown>[] | null] {
+  if (name === "add_to_cart") {
+    const raw = Array.isArray(args.items)
+      ? (args.items as Record<string, unknown>[])
+      : args.product
+      ? [{ product: args.product, quantity: args.quantity }]
+      : [];
+    const items: { id: string; name: string; qty: number }[] = [];
+    for (const it of raw) {
+      const p = resolveProduct(String(it.product ?? it.name ?? it.id ?? ""));
+      if (!p) continue;
+      items.push({ id: String(p.id), name: p.name, qty: Math.max(1, Math.round(toNum(it.quantity) || 1)) });
+    }
+    if (!items.length) return [{ error: "not_found", note: "Не нашёл товары для добавления." }, null, null];
+    return [{ added: items.length, items: items.map((i) => ({ name: i.name, qty: i.qty })) }, null, [{ type: "add_to_cart", items }]];
+  }
+
+  if (name === "save_lead") {
+    const phone = String(args.phone ?? "").trim();
+    if (!phone) return [{ error: "need_phone", note: "Нужен телефон покупателя." }, null, null];
+    const lead = { type: "lead", name: String(args.name ?? ""), phone, summary: String(args.summary ?? "") };
+    return [{ ok: true }, null, [lead]];
+  }
+
   if (name === "calc_quantity") {
     const area = toNum(args.area_m2);
     const unit = toNum(args.unit_area_m2);
     const waste = args.waste_percent != null ? toNum(args.waste_percent) : 10;
     const price = toNum(args.price_per_unit);
     if (!area || !unit) {
-      return [{ error: "need_area_and_unit", note: "Нужны площадь поверхности (м²) и площадь одной единицы (м²)." }, null];
+      return [{ error: "need_area_and_unit", note: "Нужны площадь поверхности (м²) и площадь одной единицы (м²)." }, null, null];
     }
     const units = Math.ceil((area * (1 + waste / 100)) / unit);
     const out: Record<string, unknown> = { area_m2: area, unit_area_m2: unit, waste_percent: waste, units };
@@ -151,7 +223,7 @@ function runTool(name: string, args: Record<string, unknown>): [Record<string, u
       out.total = units * price;
       out.currency = offers().currency || "₸";
     }
-    return [out, null];
+    return [out, null, null];
   }
 
   if (name === "accessories_for") {
@@ -162,7 +234,7 @@ function runTool(name: string, args: Record<string, unknown>): [Record<string, u
     if (!anchor) anchor = products().find((p) => p.section_slug === (args.section || "ntpanel"));
     const cards = anchor ? accessoriesFor(anchor).map(toCard) : [];
     const compact = cards.map((c) => ({ name: c.name, price: c.price, stock: c.stock, category: c.category }));
-    return [{ accessories: compact, count: compact.length }, cards];
+    return [{ accessories: compact, count: compact.length }, cards, null];
   }
 
   if (name === "volume_discount") {
@@ -175,11 +247,11 @@ function runTool(name: string, args: Record<string, unknown>): [Record<string, u
       out.next_min_amount = next.min_amount;
       out.add_to_next = next.min_amount - amt;
     }
-    return [out, null];
+    return [out, null, null];
   }
   const cards = searchProducts(args as SearchFilters).map(toCard);
   const compact = cards.map((c) => ({ name: c.name, price: c.price, stock: c.stock, category: c.category, size: sizeOf(c.attrs) }));
-  return [{ products: compact, count: compact.length }, cards];
+  return [{ products: compact, count: compact.length }, cards, null];
 }
 
 function looseArgs(text: string): Record<string, unknown> {
@@ -239,7 +311,7 @@ function cleanReply(t: string): string {
 }
 
 export type ChatMessage = { role: "user" | "model"; text: string };
-export type ChatResult = { reply: string; products: Card[]; error?: string };
+export type ChatResult = { reply: string; products: Card[]; actions?: Record<string, unknown>[]; error?: string };
 
 export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
   if (!GROQ_KEY) {
@@ -256,10 +328,13 @@ export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
     { type: "function", function: DISCOUNT_TOOL },
     { type: "function", function: CALC_TOOL },
     { type: "function", function: ACCESSORY_TOOL },
+    { type: "function", function: ADDCART_TOOL },
+    { type: "function", function: LEAD_TOOL },
   ];
 
   let found: Card[] = [];
   let reply = "";
+  const actions: Record<string, unknown>[] = [];
 
   for (let i = 0; i < 4; i++) {
     let data: any;
@@ -306,13 +381,14 @@ export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
       } catch {
         args = {};
       }
-      const [payload, cards] = runTool(c.function?.name, args);
+      const [payload, cards, acts] = runTool(c.function?.name, args);
       if (cards !== null) found = cards;
+      if (acts) actions.push(...acts);
       convo.push({ role: "tool", tool_call_id: c.id, content: JSON.stringify(payload) });
     }
   }
 
   reply = cleanReply(reply);
   if (!reply) reply = found.length ? `Нашёл ${found.length} вариант(ов):` : "По вашему запросу ничего не нашлось.";
-  return { reply, products: found };
+  return { reply, products: found, actions };
 }
