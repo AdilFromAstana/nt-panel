@@ -1,4 +1,3 @@
-import "./catalog.css";
 import { products } from "@/lib/data";
 import CatalogClient from "@/components/CatalogClient";
 
