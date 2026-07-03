@@ -191,7 +191,12 @@ export default function CatalogClient({
         </div>
 
         <div className="layout">
+          <div className={`sidebackdrop ${sideOpen ? "on" : ""}`} onClick={() => setSideOpen(false)} />
           <aside className={`side ${sideOpen ? "open" : ""}`}>
+            <div className="side__head">
+              <span>Фильтры</span>
+              <button className="side__close" onClick={() => setSideOpen(false)} aria-label="Закрыть"><IconClose className="h-5 w-5" /></button>
+            </div>
             <div className="ozg ozcat">
               <div className="ozg__h">Категория</div>
               {section === "all" ? (
@@ -265,6 +270,7 @@ export default function CatalogClient({
             })}
 
             <button className="ozall" onClick={resetFilters}>Сбросить фильтры</button>
+            <button className="side__apply" onClick={() => setSideOpen(false)}>Показать {filtered.length} товаров</button>
           </aside>
 
           <section className="main">

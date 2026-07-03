@@ -30,6 +30,7 @@
 .catalog-root .layout{display:grid;grid-template-columns:248px 1fr;gap:24px;margin-bottom:60px}
 .catalog-root .side{position:sticky;top:78px;align-self:start;max-height:calc(100vh - 100px);overflow:auto;scrollbar-width:none;-ms-overflow-style:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:4px 16px}
 .catalog-root .side::-webkit-scrollbar{width:0;height:0;display:none}
+.catalog-root .side__head,.catalog-root .side__apply,.catalog-root .sidebackdrop{display:none}
 
 .catalog-root .ozg{padding:16px 0;border-bottom:1px solid #f0f0f3}
 .catalog-root .ozg:last-of-type{border-bottom:none}
@@ -141,8 +142,13 @@
 @media(max-width:1080px){ .catalog-root .grid,.catalog-root[data-variant] .grid{grid-template-columns:repeat(3,1fr)!important} }
 @media(max-width:760px){
   .catalog-root .layout{grid-template-columns:1fr}
-  .catalog-root .side{display:none;position:fixed;inset:0;top:0;z-index:90;background:#fff;max-height:100vh;padding:16px;overflow:auto}
+  .catalog-root .side{display:none;position:fixed;top:0;bottom:0;left:0;width:min(340px,86vw);z-index:90;background:#fff;max-height:100vh;padding:0 16px 16px;overflow:auto;box-shadow:2px 0 24px rgba(0,0,0,.18)}
   .catalog-root .side.open{display:block}
+  .catalog-root .side__head{display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fff;padding:14px 0 12px;margin-bottom:2px;border-bottom:1px solid var(--line);z-index:3}
+  .catalog-root .side__head span{font-size:17px;font-weight:700}
+  .catalog-root .side__close{border:none;background:none;cursor:pointer;color:var(--muted);padding:2px;display:flex}
+  .catalog-root .side__apply{display:block;position:sticky;bottom:0;width:100%;margin-top:12px;border:none;border-radius:10px;background:var(--brand);color:#fff;font-weight:700;font-size:15px;padding:14px;cursor:pointer;box-shadow:0 -10px 14px rgba(255,255,255,.95)}
+  .catalog-root .sidebackdrop.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:88}
   .catalog-root .bar__filt{display:block}
   .catalog-root .hdr__phone{display:none}
   .catalog-root .grid,.catalog-root[data-variant] .grid{grid-template-columns:repeat(2,1fr)!important;gap:10px!important}

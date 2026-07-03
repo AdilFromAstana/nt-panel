@@ -1,6 +1,8 @@
 "use client";
+import { useState } from "react";
 import CartBadge from "./CartBadge";
 import FavBadge from "./FavBadge";
+import { IconSearch, IconMenu, IconClose } from "./Icons";
 
 type Props = {
   q?: string;
@@ -9,6 +11,27 @@ type Props = {
 
 export default function SiteHeader({ q, onSearch }: Props) {
   const live = typeof onSearch === "function";
+  const [menu, setMenu] = useState(false);
+
+  const search = (extra: string) => (
+    <form
+      action={live ? undefined : "/catalog/hybrid"}
+      onSubmit={live ? (e) => e.preventDefault() : undefined}
+      className={extra}
+    >
+      <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+        <IconSearch className="h-4 w-4" />
+      </span>
+      <input
+        name="q"
+        placeholder="Поиск по каталогу…"
+        defaultValue={live ? undefined : q}
+        value={live ? q ?? "" : undefined}
+        onChange={live ? (e) => onSearch!(e.target.value) : undefined}
+        className="h-10 w-full rounded-xl border border-gray-200 bg-gray-50 pl-9 pr-4 text-sm outline-none transition focus:border-green-500 focus:bg-white"
+      />
+    </form>
+  );
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur-md">
@@ -21,24 +44,11 @@ export default function SiteHeader({ q, onSearch }: Props) {
           </span>
         </a>
 
-        <form
-          action={live ? undefined : "/catalog/hybrid"}
-          onSubmit={live ? (e) => e.preventDefault() : undefined}
-          className="relative hidden flex-1 md:block"
-        >
-          <input
-            name="q"
-            placeholder="Поиск по каталогу…"
-            defaultValue={live ? undefined : q}
-            value={live ? q ?? "" : undefined}
-            onChange={live ? (e) => onSearch!(e.target.value) : undefined}
-            className="h-10 w-full rounded-xl border border-gray-200 bg-gray-50 px-4 text-sm outline-none transition focus:border-green-500 focus:bg-white"
-          />
-        </form>
+        {search("relative hidden flex-1 md:block")}
 
-        <nav className="ml-auto flex items-center gap-5 sm:gap-7">
-          <a href="/" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 sm:inline">Главная</a>
-          <a href="/catalog/hybrid" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 sm:inline">Каталог</a>
+        <nav className="ml-auto flex items-center gap-5 sm:gap-6">
+          <a href="/" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">Главная</a>
+          <a href="/catalog/hybrid" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">Каталог</a>
           <a href="tel:+77081237069" className="hidden text-sm font-semibold lg:inline">+7 708 123-70-69</a>
           <a href="/favorites" className="relative" aria-label="Избранное">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -52,8 +62,32 @@ export default function SiteHeader({ q, onSearch }: Props) {
             </svg>
             <CartBadge />
           </a>
+          <button className="md:hidden" aria-label="Меню" onClick={() => setMenu((v) => !v)}>
+            {menu ? <IconClose className="h-6 w-6" /> : <IconMenu className="h-6 w-6" />}
+          </button>
         </nav>
       </div>
+
+      <div className="relative px-4 pb-3 md:hidden">{search("relative")}</div>
+
+      {menu && (
+        <nav className="border-t border-gray-100 bg-white md:hidden">
+          <div className="mx-auto flex max-w-6xl flex-col px-4 py-1">
+            {[
+              { href: "/", label: "Главная" },
+              { href: "/catalog/hybrid", label: "Каталог" },
+              { href: "/favorites", label: "Избранное" },
+              { href: "/cart", label: "Корзина" },
+            ].map((l) => (
+              <a key={l.href} href={l.href} onClick={() => setMenu(false)} className="border-b border-gray-50 py-3 font-semibold transition hover:text-green-600">
+                {l.label}
+              </a>
+            ))}
+            <a href="tel:+77081237069" className="py-3 font-semibold text-green-600">+7 708 123-70-69</a>
+            <a href="https://wa.me/77081237069" className="py-3 font-semibold text-green-600">Написать в WhatsApp</a>
+          </div>
+        </nav>
+      )}
     </header>
   );
 }

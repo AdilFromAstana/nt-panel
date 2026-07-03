@@ -162,7 +162,7 @@ export default function ProductView({ product, variants }: { product: Product; v
         </div>
       </main>
 
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-gray-100 bg-white/95 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-gray-100 bg-white/95 pl-4 pr-[4.75rem] pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
         <div className="flex items-center gap-3">
           <div className="leading-tight">
             <div className="text-lg font-extrabold">{fmt(product.price * qty)}</div>
