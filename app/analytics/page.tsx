@@ -5,10 +5,37 @@ import { IconChart, IconSearch, IconWarning, IconClick, IconList } from "@/compo
 type Summary = {
   total_events: number; chats: number; opens: number; whatsapp: number; add_cart: number;
   upsell: number; nudge_shown: number; exit_intent: number; card_clicks: number;
+  funnel: [string, number][]; faq_answers: number; leads: number; bot_add_to_cart: number;
   by_type: [string, number][]; top_queries: [string, number][];
   zero_result_queries: [string, number][]; top_products: [string, number][];
   first: string | null; last: string | null;
 };
+
+function Funnel({ steps }: { steps: [string, number][] }) {
+  if (!steps || !steps.length) return null;
+  const base = steps[0][1] || 0;
+  return (
+    <div className="bg-white border border-gray-200 rounded-2xl p-4 mb-4">
+      <h2 className="mb-3 text-sm font-bold">Воронка продаж бота</h2>
+      <div className="space-y-2.5">
+        {steps.map(([label, n], i) => {
+          const pct = base ? Math.round((n / base) * 100) : 0;
+          return (
+            <div key={label}>
+              <div className="flex justify-between text-sm">
+                <span>{label}</span>
+                <span className="font-bold text-[#0a3d8f]">{n}{i > 0 && <span className="text-gray-400 font-normal"> · {pct}%</span>}</span>
+              </div>
+              <div className="h-2 bg-[#eef2f8] rounded mt-1 overflow-hidden">
+                <i className="block h-full bg-[#1f6feb]" style={{ width: (base ? pct : 0) + "%" }} />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
 function Bars({ pairs, red }: { pairs: [string, number][]; red?: boolean }) {
   if (!pairs.length) return <div className="text-gray-400 text-sm py-2">Пока нет данных</div>;
@@ -63,14 +90,15 @@ export default function AnalyticsPage() {
           <>
             <div className="grid gap-3 mb-6" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(150px,1fr))" }}>
               <Card n={d.chats} l="Диалогов" />
-              <Card n={d.opens} l="Открытий чата" />
+              <Card n={d.bot_add_to_cart} l="В корзину (бот)" />
+              <Card n={d.leads} l="Лидов" />
+              <Card n={d.faq_answers} l="Ответов из FAQ" />
               <Card n={d.card_clicks} l="Кликов по товарам" />
-              <Card n={d.add_cart} l="В корзину из чата" />
-              <Card n={d.upsell} l="Клик апселла" />
               <Card n={d.whatsapp} l="В WhatsApp" />
               <Card n={d.nudge_shown} l="Показов подсказки" />
               <Card n={d.exit_intent} l="Exit-intent" />
             </div>
+            <Funnel steps={d.funnel} />
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="mb-2.5 inline-flex items-center gap-1.5 text-sm font-bold"><IconSearch className="h-4 w-4" /> Топ запросов</h2><Bars pairs={d.top_queries} /></div>
               <div className="bg-white border border-gray-200 rounded-2xl p-4"><h2 className="mb-2.5 inline-flex items-center gap-1.5 text-sm font-bold"><IconWarning className="h-4 w-4" /> Запросы без результата</h2><Bars pairs={d.zero_result_queries} red /></div>

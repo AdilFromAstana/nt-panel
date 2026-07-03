@@ -313,7 +313,7 @@ function cleanReply(t: string): string {
 }
 
 export type ChatMessage = { role: "user" | "model"; text: string };
-export type ChatResult = { reply: string; products: Card[]; actions?: Record<string, unknown>[]; error?: string };
+export type ChatResult = { reply: string; products: Card[]; actions?: Record<string, unknown>[]; toolsUsed?: string[]; error?: string };
 
 export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
   if (!GROQ_KEY) {
@@ -338,6 +338,7 @@ export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
   let found: Card[] = [];
   let reply = "";
   const actions: Record<string, unknown>[] = [];
+  const usedTools = new Set<string>();
 
   for (let i = 0; i < 4; i++) {
     let data: any;
@@ -384,6 +385,7 @@ export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
       } catch {
         args = {};
       }
+      if (c.function?.name) usedTools.add(String(c.function.name));
       const [payload, cards, acts] = runTool(c.function?.name, args);
       if (cards !== null) found = cards;
       if (acts) actions.push(...acts);
@@ -393,5 +395,5 @@ export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
 
   reply = cleanReply(reply);
   if (!reply) reply = found.length ? `Нашёл ${found.length} вариант(ов):` : "По вашему запросу ничего не нашлось.";
-  return { reply, products: found, actions };
+  return { reply, products: found, actions, toolsUsed: [...usedTools] };
 }
