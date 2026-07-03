@@ -1,15 +1,16 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import AddToCart from "./AddToCart";
 import SiteHeader from "./SiteHeader";
+import ProductFaq, { productFaqItems } from "./ProductFaq";
 import { getFavs, toggleFav } from "@/lib/cart";
 import type { VariantOption } from "@/lib/data";
 import { IconHeart, IconPlay, IconTruck, IconCard, IconShield } from "./Icons";
 
 type Product = {
   id: string; name: string; price: number; stock: number;
-  category_name?: string; preview_image?: string | null; images?: string[];
+  category_id: string; category_name?: string; preview_image?: string | null; images?: string[];
   description?: string; attrs?: Record<string, string>;
 };
 
@@ -35,10 +36,31 @@ export default function ProductView({ product, variants }: { product: Product; v
   const [main, setMain] = useState(gallery[0] || "");
   const [qty, setQty] = useState(1);
   const [fav, setFav] = useState(false);
+  const [lightbox, setLightbox] = useState(false);
+  const [li, setLi] = useState(0);
+  const touchX = useRef(0);
+  const openLightbox = (idx: number) => { setLi(Math.max(0, idx)); setLightbox(true); };
+  const goLb = (d: number) => setLi((i) => (i + d + gallery.length) % gallery.length);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(false);
+      else if (e.key === "ArrowLeft") goLb(-1);
+      else if (e.key === "ArrowRight") goLb(1);
+    };
+    document.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.removeEventListener("keydown", onKey); document.body.style.overflow = prev; };
+  }, [lightbox, gallery.length]);
   const b = badge(Number(product.stock));
   const attrs = Object.entries(product.attrs || {});
   const opts = variants?.options || [];
   const current = opts.find((o) => o.current);
+  const faqItems = productFaqItems(product.id, product.category_id, true);
+  const faqTop = faqItems.filter((f) => f.scope !== "global").slice(0, 3);
+  const scrollToFaq = () => document.getElementById("faq")?.scrollIntoView({ behavior: "smooth", block: "start" });
 
   useEffect(() => setFav(!!getFavs()[product.id]), [product.id]);
 
@@ -85,8 +107,13 @@ export default function ProductView({ product, variants }: { product: Product; v
               <video key={main} src={main} controls autoPlay loop muted playsInline
                 className="aspect-[4/5] w-full rounded-2xl border border-gray-100 bg-[#f3f1ec] object-contain" />
             ) : (
-              <div className="aspect-[4/5] rounded-2xl border border-gray-100 bg-[#f3f1ec] bg-contain bg-center bg-no-repeat"
-                style={main ? { backgroundImage: `url('${main}')` } : undefined} />
+              <button type="button" onClick={() => openLightbox(Math.max(0, gallery.indexOf(main)))} aria-label="Открыть фото на весь экран"
+                className="group relative block aspect-[4/5] w-full cursor-zoom-in rounded-2xl border border-gray-100 bg-[#f3f1ec] bg-contain bg-center bg-no-repeat"
+                style={main ? { backgroundImage: `url('${main}')` } : undefined}>
+                <span className="absolute bottom-3 right-3 grid h-9 w-9 place-items-center rounded-full bg-white/85 text-gray-700 shadow-sm backdrop-blur-sm transition group-hover:bg-white">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4" /></svg>
+                </span>
+              </button>
             )}
             {gallery.length > 1 && (
               <div className="mt-3 flex flex-wrap gap-2">
@@ -142,6 +169,23 @@ export default function ProductView({ product, variants }: { product: Product; v
               ))}
             </div>
 
+            {faqItems.length > 0 && (
+              <div className="mb-7 rounded-2xl border border-green-100 bg-green-50/60 p-4">
+                <div className="mb-2.5 flex items-center justify-between">
+                  <span className="text-sm font-bold uppercase tracking-wide text-green-800">Частые вопросы о товаре</span>
+                  <button onClick={scrollToFaq} className="text-sm font-semibold text-green-700 hover:underline">все {faqItems.length} →</button>
+                </div>
+                <div className="flex flex-col gap-2">
+                  {faqTop.map((f) => (
+                    <button key={f.q} onClick={scrollToFaq} className="flex items-center justify-between gap-3 rounded-xl bg-white px-4 py-3 text-left text-[15px] font-medium text-gray-800 shadow-sm ring-1 ring-gray-100 transition hover:ring-green-200">
+                      <span className="line-clamp-1">{f.q}</span>
+                      <span className="shrink-0 text-gray-300">→</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {attrs.length > 0 && (
               <>
                 <h2 className="mb-3 text-lg font-bold">Характеристики</h2>
@@ -160,6 +204,13 @@ export default function ProductView({ product, variants }: { product: Product; v
             {product.description && <p className="mt-4 text-gray-600">{product.description}</p>}
           </div>
         </div>
+
+        {faqItems.length > 0 && (
+          <section id="faq" className="mt-12 scroll-mt-24">
+            <h2 className="mb-4 text-xl font-bold">Вопросы о товаре <span className="text-gray-400">({faqItems.length})</span></h2>
+            <ProductFaq productId={product.id} categoryId={product.category_id} />
+          </section>
+        )}
       </main>
 
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-gray-100 bg-white/95 pl-4 pr-[4.75rem] pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
@@ -171,6 +222,56 @@ export default function ProductView({ product, variants }: { product: Product; v
           <AddToCart id={product.id} qty={qty} className="flex-1 rounded-xl bg-green-700 py-3.5 text-center font-semibold text-white transition hover:brightness-95" />
         </div>
       </div>
+
+      {lightbox && gallery.length > 0 && (
+        <div className="fixed inset-0 z-[9999] flex flex-col bg-black/95"
+          onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
+          onTouchEnd={(e) => { const dx = e.changedTouches[0].clientX - touchX.current; if (Math.abs(dx) > 40) goLb(dx < 0 ? 1 : -1); }}>
+          <div className="flex items-center justify-between px-4 py-3 text-white">
+            <span className="text-sm text-white/70">{li + 1} / {gallery.length}</span>
+            <button onClick={() => setLightbox(false)} aria-label="Закрыть" className="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition hover:bg-white/20">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeWidth={2} d="M6 6l12 12M18 6L6 18" /></svg>
+            </button>
+          </div>
+
+          <div className="relative flex flex-1 items-center justify-center overflow-hidden px-2 pb-4" onClick={() => setLightbox(false)}>
+            {isVideo(gallery[li]) ? (
+              <video key={gallery[li]} src={gallery[li]} controls autoPlay loop playsInline onClick={(e) => e.stopPropagation()}
+                className="max-h-full max-w-full object-contain" />
+            ) : (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={gallery[li]} alt={product.name} onClick={(e) => e.stopPropagation()} className="max-h-full max-w-full object-contain" />
+            )}
+
+            {gallery.length > 1 && (
+              <>
+                <button onClick={(e) => { e.stopPropagation(); goLb(-1); }} aria-label="Назад" className="absolute left-3 top-1/2 hidden h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20 sm:grid">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeWidth={2} d="m15 6-6 6 6 6" /></svg>
+                </button>
+                <button onClick={(e) => { e.stopPropagation(); goLb(1); }} aria-label="Вперёд" className="absolute right-3 top-1/2 hidden h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20 sm:grid">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeWidth={2} d="m9 6 6 6-6 6" /></svg>
+                </button>
+              </>
+            )}
+          </div>
+
+          {gallery.length > 1 && (
+            <div className="flex justify-center gap-2 overflow-x-auto px-4 pb-[calc(1rem+env(safe-area-inset-bottom))]">
+              {gallery.map((s, i) => (
+                <button key={s} onClick={() => setLi(i)}
+                  className={`h-14 w-14 shrink-0 overflow-hidden rounded-lg border-2 ${i === li ? "border-white" : "border-transparent opacity-60"}`}>
+                  {isVideo(s) ? (
+                    <video src={s} muted playsInline preload="metadata" className="h-full w-full object-cover" />
+                  ) : (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={s} alt="" className="h-full w-full object-cover" />
+                  )}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

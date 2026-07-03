@@ -186,10 +186,10 @@ export default function CatalogClient({
       <main className="mx-auto max-w-[1280px] px-4">
         <nav className="my-3 text-[13px] text-[#7b7b86]">Главная / <b className="text-[#1b1b1f]">Каталог</b></nav>
 
-        <div className="mb-[18px] flex flex-wrap gap-2.5">
+        <div className="mb-[18px] -mx-4 flex gap-2.5 overflow-x-auto px-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:flex-wrap md:px-0">
           {SECTIONS.map((s) => (
             <button key={s.slug} onClick={() => chooseSection(s.slug)}
-              className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm ${section === s.slug ? "border-[#1b1b1f] bg-[#1b1b1f] text-white" : "border-[#ececf0] bg-white"}`}>
+              className={`shrink-0 whitespace-nowrap rounded-full border px-4 py-2 text-sm ${section === s.slug ? "border-[#1b1b1f] bg-[#1b1b1f] text-white" : "border-[#ececf0] bg-white"}`}>
               {s.name}<b className={`ml-1.5 font-semibold ${section === s.slug ? "text-[#cfcfd6]" : "text-[#7b7b86]"}`}>{counts[s.slug]}</b>
             </button>
           ))}
@@ -288,18 +288,45 @@ export default function CatalogClient({
           </aside>
 
           <section>
-            <div className="mb-4 flex items-center gap-3.5">
-              <span className="text-sm text-[#7b7b86]">Найдено: {filtered.length}</span>
-              <label className="ml-auto text-sm text-[#7b7b86]">Сортировка:
-                <select value={sort} onChange={(e) => setSort(e.target.value)} className="ml-1.5 h-[38px] rounded-[9px] border border-[#ececf0] bg-white px-2.5">
+            {(() => {
+              const activeFilters =
+                (category ? 1 : 0) + (inStock ? 1 : 0) + (min != null || max != null ? 1 : 0) +
+                Object.values(attrs).reduce((a, s) => a + (s.length ? 1 : 0), 0);
+              const options = (
+                <>
                   <option value="pop">Популярные</option>
                   <option value="cheap">Сначала дешевле</option>
                   <option value="exp">Сначала дороже</option>
                   <option value="new">Новинки</option>
-                </select>
-              </label>
-              <button className="h-[38px] rounded-[9px] border border-[#ececf0] bg-white px-3.5 md:hidden" onClick={() => setSideOpen((v) => !v)}>Фильтры</button>
-            </div>
+                </>
+              );
+              return (
+                <div className="mb-4">
+                  <div className="hidden items-center gap-3.5 md:flex">
+                    <span className="text-sm text-[#7b7b86]">Найдено: {filtered.length}</span>
+                    <label className="ml-auto text-sm text-[#7b7b86]">Сортировка:
+                      <select value={sort} onChange={(e) => setSort(e.target.value)} className="ml-1.5 h-[38px] rounded-[9px] border border-[#ececf0] bg-white px-2.5">{options}</select>
+                    </label>
+                  </div>
+
+                  <div className="md:hidden">
+                    <div className="mb-2.5 text-sm text-[#7b7b86]">Найдено: <b className="text-[#1b1b1f]">{filtered.length}</b> товаров</div>
+                    <div className="grid grid-cols-2 gap-2.5">
+                      <button onClick={() => setSideOpen(true)} className="relative flex h-12 items-center justify-center gap-2 rounded-xl border border-[#ececf0] bg-white text-[15px] font-semibold text-[#1b1b1f] active:scale-[.98]">
+                        <svg className="h-5 w-5 text-[#7b7b86]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeWidth={2} d="M3 5h18M6 12h12M10 19h4" /></svg>
+                        Фильтры
+                        {activeFilters > 0 && <span className="ml-0.5 grid h-5 min-w-5 place-items-center rounded-full bg-[#2f6b3f] px-1 text-xs font-bold text-white">{activeFilters}</span>}
+                      </button>
+                      <div className="relative">
+                        <svg className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-[#7b7b86]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeWidth={2} d="M7 4v16m0 0l-3-3m3 3l3-3M17 20V4m0 0l-3 3m3-3l3 3" /></svg>
+                        <select value={sort} onChange={(e) => setSort(e.target.value)} className="h-12 w-full appearance-none rounded-xl border border-[#ececf0] bg-white pl-10 pr-9 text-[15px] font-semibold text-[#1b1b1f]">{options}</select>
+                        <svg className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#7b7b86]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeWidth={2} d="m6 9 6 6 6-6" /></svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
 
             <div className="grid grid-cols-2 gap-2.5 md:grid-cols-3 md:gap-4 lg:grid-cols-4">
               {slice.length === 0 && <div className="p-10 text-[#999]">Ничего не найдено</div>}
