@@ -50,6 +50,7 @@ export default function SiteHeader({ q, onSearch }: Props) {
           <a href="/" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">Главная</a>
           <a href="/catalog/hybrid" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">Каталог</a>
           <a href="/faq" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">FAQ</a>
+          <a href="/about" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">О нас</a>
           <a href="tel:+77081237069" className="hidden text-sm font-semibold lg:inline">+7 708 123-70-69</a>
           <a href="/favorites" className="relative" aria-label="Избранное">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,6 +79,7 @@ export default function SiteHeader({ q, onSearch }: Props) {
               { href: "/", label: "Главная" },
               { href: "/catalog/hybrid", label: "Каталог" },
               { href: "/faq", label: "FAQ" },
+              { href: "/about", label: "О нас" },
               { href: "/favorites", label: "Избранное" },
               { href: "/cart", label: "Корзина" },
             ].map((l) => (
