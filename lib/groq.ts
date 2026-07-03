@@ -8,6 +8,8 @@ import {
   volumeDiscountFor,
   volumeTiers,
   offers,
+  products,
+  accessoriesFor,
   type SearchFilters,
 } from "./data";
 
@@ -53,7 +55,16 @@ function systemPrompt(): string {
     "- " +
     offersText() +
     "\n- Для расчёта скидки на объём ВСЕГДА вызывай инструмент volume_discount с суммой заказа — " +
-    "никогда не считай сам. Рассрочку НЕ предлагай."
+    "никогда не считай сам. Рассрочку НЕ предлагай.\n\n" +
+    "ПРОДАЖНЫЙ СЦЕНАРИЙ (веди к заказу, шаг за шагом):\n" +
+    "1) КВАЛИФИКАЦИЯ: если не хватает данных — задай ОДИН вопрос (комната, площадь м², бюджет, цвет/фактура).\n" +
+    "2) ПОДБОР: вызови search_products, покажи 2–4 варианта.\n" +
+    "3) РАСЧЁТ: как только знаешь площадь и товар — вызови calc_quantity. Площадь одной панели посчитай из её " +
+    "размера (переведи мм в м², напр. 140×3000 мм = 0.42 м²), передай цену. Скажи «нужно N шт на M м² ≈ СУММА ₸».\n" +
+    "4) КОМПЛЕКТ: после панелей вызови accessories_for и предложи профиль + клей/крепёж одной фразой.\n" +
+    "5) ЗАКРЫТИЕ: мягко предложи ОДНО действие — добавить в корзину или оставить телефон менеджеру для точного расчёта " +
+    "и брони. Не дави, один призыв в конце.\n" +
+    "Отвечай короткими шагами, не вываливай всё сразу."
   );
 }
 
@@ -84,9 +95,76 @@ const DISCOUNT_TOOL = {
   },
 };
 
+const CALC_TOOL = {
+  name: "calc_quantity",
+  description:
+    "Рассчитать, сколько единиц товара нужно на площадь: (площадь × (1 + запас)) ÷ площадь одной единицы, округление вверх. Если передана цена — считает итоговую стоимость.",
+  parameters: {
+    type: "object",
+    properties: {
+      area_m2: { type: ["number", "string"], description: "Площадь поверхности (стены/пола), м²" },
+      unit_area_m2: { type: ["number", "string"], description: "Площадь одной панели/единицы в м² (посчитай из размера товара)" },
+      price_per_unit: { type: ["number", "string"], description: "Цена за единицу, тенге (необязательно)" },
+      waste_percent: { type: ["number", "string"], description: "Запас на подрез, % (по умолчанию 10)" },
+    },
+    required: ["area_m2", "unit_area_m2"],
+  },
+};
+
+const ACCESSORY_TOOL = {
+  name: "accessories_for",
+  description: "Подобрать сопутствующие товары (профили, крепёж, клей) к панели/луверу по названию/модели товара, категории или разделу.",
+  parameters: {
+    type: "object",
+    properties: {
+      product: { type: "string", description: "Название или модель товара (напр. «BW 61009»)" },
+      category: { type: "string", description: "Категория товара" },
+      section: { type: "string", description: "Раздел: ntpanel, ntstone, ntbricks, ntblok" },
+    },
+  },
+};
+
 type Card = ReturnType<typeof toCard>;
 
+function sizeOf(attrs: Record<string, string>): string {
+  const k = Object.keys(attrs || {}).find((x) => /размер/i.test(x));
+  return k ? String(attrs[k] || "") : "";
+}
+
+function toNum(v: unknown): number {
+  return Number(String(v ?? "").replace(/[^\d.]/g, "")) || 0;
+}
+
 function runTool(name: string, args: Record<string, unknown>): [Record<string, unknown>, Card[] | null] {
+  if (name === "calc_quantity") {
+    const area = toNum(args.area_m2);
+    const unit = toNum(args.unit_area_m2);
+    const waste = args.waste_percent != null ? toNum(args.waste_percent) : 10;
+    const price = toNum(args.price_per_unit);
+    if (!area || !unit) {
+      return [{ error: "need_area_and_unit", note: "Нужны площадь поверхности (м²) и площадь одной единицы (м²)." }, null];
+    }
+    const units = Math.ceil((area * (1 + waste / 100)) / unit);
+    const out: Record<string, unknown> = { area_m2: area, unit_area_m2: unit, waste_percent: waste, units };
+    if (price) {
+      out.price_per_unit = price;
+      out.total = units * price;
+      out.currency = offers().currency || "₸";
+    }
+    return [out, null];
+  }
+
+  if (name === "accessories_for") {
+    const q = String(args.product || args.category || "").trim().toLowerCase();
+    let anchor = q
+      ? products().find((p) => (p.name || "").toLowerCase().includes(q) || (p.category_name || "").toLowerCase().includes(q))
+      : undefined;
+    if (!anchor) anchor = products().find((p) => p.section_slug === (args.section || "ntpanel"));
+    const cards = anchor ? accessoriesFor(anchor).map(toCard) : [];
+    const compact = cards.map((c) => ({ name: c.name, price: c.price, stock: c.stock, category: c.category }));
+    return [{ accessories: compact, count: compact.length }, cards];
+  }
+
   if (name === "volume_discount") {
     const amt = Number(String(args.amount ?? "").replace(/[^\d.]/g, "")) || 0;
     const pct = volumeDiscountFor(amt);
@@ -100,7 +178,7 @@ function runTool(name: string, args: Record<string, unknown>): [Record<string, u
     return [out, null];
   }
   const cards = searchProducts(args as SearchFilters).map(toCard);
-  const compact = cards.map((c) => ({ name: c.name, price: c.price, stock: c.stock, category: c.category }));
+  const compact = cards.map((c) => ({ name: c.name, price: c.price, stock: c.stock, category: c.category, size: sizeOf(c.attrs) }));
   return [{ products: compact, count: compact.length }, cards];
 }
 
@@ -176,6 +254,8 @@ export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
   const tools = [
     { type: "function", function: SEARCH_TOOL },
     { type: "function", function: DISCOUNT_TOOL },
+    { type: "function", function: CALC_TOOL },
+    { type: "function", function: ACCESSORY_TOOL },
   ];
 
   let found: Card[] = [];
