@@ -183,8 +183,12 @@ function runTool(
   args: Record<string, unknown>
 ): [Record<string, unknown>, Card[] | null, Record<string, unknown>[] | null] {
   if (name === "add_to_cart") {
-    const raw = Array.isArray(args.items)
-      ? (args.items as Record<string, unknown>[])
+    let itemsArg: unknown = args.items;
+    if (typeof itemsArg === "string") {
+      try { itemsArg = JSON.parse(itemsArg); } catch { itemsArg = []; }
+    }
+    const raw = Array.isArray(itemsArg)
+      ? (itemsArg as Record<string, unknown>[])
       : args.product
       ? [{ product: args.product, quantity: args.quantity }]
       : [];
@@ -303,6 +307,38 @@ function salvageToolCall(bodyText: string): ChatResult | null {
   return { reply, products: found };
 }
 
+const TOOL_NAMES = "search_products|calc_quantity|accessories_for|search_faq|volume_discount|add_to_cart|save_lead";
+
+function extractLeakedCalls(text: string): { name: string; args: Record<string, unknown>; start: number; end: number }[] {
+  const out: { name: string; args: Record<string, unknown>; start: number; end: number }[] = [];
+  const re = new RegExp(`function\\s*=\\s*(${TOOL_NAMES})\\s*>`, "gi");
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text))) {
+    const i = text.indexOf("{", m.index);
+    if (i < 0) continue;
+    let depth = 0, j = i, inStr = false, esc = false;
+    for (; j < text.length; j++) {
+      const ch = text[j];
+      if (inStr) {
+        if (esc) esc = false;
+        else if (ch === "\\") esc = true;
+        else if (ch === '"') inStr = false;
+      } else if (ch === '"') inStr = true;
+      else if (ch === "{") depth++;
+      else if (ch === "}") { depth--; if (depth === 0) { j++; break; } }
+    }
+    const jsonStr = text.slice(i, j);
+    let args: Record<string, unknown> = {};
+    try { args = JSON.parse(jsonStr); } catch { args = looseArgs(jsonStr); }
+    let end = j;
+    const tail = text.slice(j).match(/^\s*<\/?function>/);
+    if (tail) end = j + tail[0].length;
+    out.push({ name: m[1], args, start: m.index, end });
+    re.lastIndex = end;
+  }
+  return out;
+}
+
 function cleanReply(t: string): string {
   return (t || "")
     .replace(/<function=[\s\S]*?<\/function>/g, "")
@@ -390,6 +426,19 @@ export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
       if (cards !== null) found = cards;
       if (acts) actions.push(...acts);
       convo.push({ role: "tool", tool_call_id: c.id, content: JSON.stringify(payload) });
+    }
+  }
+
+  const leaked = extractLeakedCalls(reply);
+  if (leaked.length) {
+    for (const l of [...leaked].sort((a, b) => b.start - a.start)) {
+      reply = reply.slice(0, l.start) + reply.slice(l.end);
+    }
+    for (const l of leaked) {
+      usedTools.add(l.name);
+      const [, cards, acts] = runTool(l.name, l.args);
+      if (cards !== null) found = cards;
+      if (acts) actions.push(...acts);
     }
   }
 
