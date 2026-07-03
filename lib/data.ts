@@ -32,6 +32,28 @@ export function productById(id: string): Product | undefined {
   return products().find((p) => String(p.id) === String(id));
 }
 
+export type MiniProduct = {
+  id: string;
+  name: string;
+  price: number;
+  stock: number;
+  preview_image?: string | null;
+  category_name?: string;
+  variant_label?: string;
+};
+
+export function productMinis(): MiniProduct[] {
+  return products().map((p) => ({
+    id: p.id,
+    name: p.name,
+    price: p.price,
+    stock: Number(p.stock) || 0,
+    preview_image: p.preview_image ?? null,
+    category_name: p.category_name || "",
+    variant_label: p.variant_label,
+  }));
+}
+
 export const SECTION_LABELS: Record<string, string> = {
   ntpanel: "Стеновые панели и луверы",
   ntstone: "Гибкий камень",

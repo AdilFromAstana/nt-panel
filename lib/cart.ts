@@ -19,6 +19,30 @@ export function addToCart(id: string, qty = 1) {
   write(c);
 }
 
+export function getCart(): Record<string, number> {
+  const c = read();
+  const out: Record<string, number> = {};
+  for (const [k, v] of Object.entries(c)) if (k !== "__fav" && typeof v === "number" && v > 0) out[k] = v;
+  return out;
+}
+
+export function setQty(id: string, qty: number) {
+  const c = read();
+  if (qty <= 0) delete c[id];
+  else c[id] = qty;
+  write(c);
+}
+
+export function removeFromCart(id: string) {
+  setQty(id, 0);
+}
+
+export function clearCart() {
+  const c = read();
+  for (const k of Object.keys(c)) if (k !== "__fav") delete c[k];
+  write(c);
+}
+
 export function getFavs(): Record<string, number> {
   return read().__fav || {};
 }

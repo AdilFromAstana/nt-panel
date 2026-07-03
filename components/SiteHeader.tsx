@@ -1,5 +1,6 @@
 "use client";
 import CartBadge from "./CartBadge";
+import FavBadge from "./FavBadge";
 
 type Props = {
   q?: string;
@@ -39,7 +40,13 @@ export default function SiteHeader({ q, onSearch }: Props) {
           <a href="/" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 sm:inline">Главная</a>
           <a href="/catalog/hybrid" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 sm:inline">Каталог</a>
           <a href="tel:+77081237069" className="hidden text-sm font-semibold lg:inline">+7 708 123-70-69</a>
-          <a href="/catalog/hybrid" className="relative" aria-label="Корзина">
+          <a href="/favorites" className="relative" aria-label="Избранное">
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            <FavBadge />
+          </a>
+          <a href="/cart" className="relative" aria-label="Корзина">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 000 0z" />
             </svg>
