@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import {
-  productById, variantsOf, accessoriesFor, sameCategoryItems, similarTo, feedCard,
+  productById, variantsOf, variantGroupOf, accessoriesFor, sameCategoryItems, similarTo, feedCard,
 } from "@/lib/data";
 import ProductView from "@/components/ProductView";
 import RelatedFeed from "@/components/RelatedFeed";
@@ -10,7 +10,9 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   const product = productById(id);
   if (!product) notFound();
 
+  const variantGroup = variantGroupOf(product);
   const shown = new Set<string>([String(product.id)]);
+  variantGroup?.options.forEach((o) => shown.add(String(o.id)));
   const take = (list: ReturnType<typeof variantsOf>) => {
     const out = list.filter((p) => !shown.has(String(p.id)));
     out.forEach((p) => shown.add(String(p.id)));
@@ -24,7 +26,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
 
   return (
     <div className="bg-white">
-      <ProductView product={product} />
+      <ProductView product={product} variants={variantGroup} />
       <RelatedFeed variants={variants} accessories={accessories} category={category} feed={feed} />
     </div>
   );

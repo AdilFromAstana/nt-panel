@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function AddToCart({ id, className }: { id: string; className?: string }) {
+export default function AddToCart({ id, qty = 1, className }: { id: string; qty?: number; className?: string }) {
   const [added, setAdded] = useState(false);
   function add() {
     let c: Record<string, number> = {};
@@ -9,7 +9,7 @@ export default function AddToCart({ id, className }: { id: string; className?: s
       const raw = JSON.parse(localStorage.getItem("ntcart2") || "{}");
       if (!Array.isArray(raw)) c = raw;
     } catch {}
-    c[id] = ((c[id] as number) || 0) + 1;
+    c[id] = ((c[id] as number) || 0) + Math.max(1, qty);
     localStorage.setItem("ntcart2", JSON.stringify(c));
     window.dispatchEvent(new Event("ntcart-change"));
     setAdded(true);

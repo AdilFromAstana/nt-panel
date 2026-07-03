@@ -16,6 +16,10 @@ export type Product = {
   images?: string[];
   description?: string;
   attrs?: Record<string, string>;
+  variant_group?: string;
+  variant_axis?: string;
+  variant_label?: string;
+  variant_order?: number;
 };
 
 let _products: Product[] | null = null;
@@ -190,6 +194,34 @@ function attrVal(p: Product, key: string): string {
 function codeFamily(name: string): string {
   const m = name.match(/[a-zа-я]{1,3}\s?\d{3,6}/i);
   return m ? m[0].toLowerCase().replace(/\s+/g, "") : "";
+}
+
+export type VariantOption = {
+  id: string;
+  label: string;
+  preview_image?: string | null;
+  price: number;
+  stock: number;
+  current: boolean;
+};
+
+export function variantGroupOf(p: Product): { axis: string; options: VariantOption[] } | null {
+  if (!p.variant_group) return null;
+  const members = products()
+    .filter((x) => x.variant_group === p.variant_group)
+    .sort((a, b) => (a.variant_order ?? 0) - (b.variant_order ?? 0));
+  if (members.length < 2) return null;
+  return {
+    axis: p.variant_axis || "Вариант",
+    options: members.map((x) => ({
+      id: x.id,
+      label: x.variant_label || x.name,
+      preview_image: x.preview_image ?? null,
+      price: x.price,
+      stock: Number(x.stock) || 0,
+      current: String(x.id) === String(p.id),
+    })),
+  };
 }
 
 export function variantsOf(p: Product, limit = 8): Product[] {

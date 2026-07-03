@@ -1353,7 +1353,11 @@
     },
     "category_name": "Стеновые панели",
     "category_slug": "stenovie-paneli",
-    "section_slug": "ntpanel"
+    "section_slug": "ntpanel",
+    "variant_group": "vg-showcase-panels",
+    "variant_axis": "Отделка",
+    "variant_label": "Ткань GM 3014",
+    "variant_order": 1
   },
   {
     "id": "59",
@@ -1380,7 +1384,11 @@
     },
     "category_name": "Стеновые панели",
     "category_slug": "stenovie-paneli",
-    "section_slug": "ntpanel"
+    "section_slug": "ntpanel",
+    "variant_group": "vg-showcase-panels",
+    "variant_axis": "Отделка",
+    "variant_label": "Ткань GM 3016",
+    "variant_order": 3
   },
   {
     "id": "60",
@@ -1547,7 +1555,11 @@
     },
     "category_name": "Стеновые панели",
     "category_slug": "stenovie-paneli",
-    "section_slug": "ntpanel"
+    "section_slug": "ntpanel",
+    "variant_group": "vg-showcase-panels",
+    "variant_axis": "Отделка",
+    "variant_label": "Кожа серо-беж",
+    "variant_order": 2
   },
   {
     "id": "67",
