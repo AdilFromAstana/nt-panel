@@ -12,6 +12,7 @@ import {
   accessoriesFor,
   type SearchFilters,
 } from "./data";
+import { searchFaq } from "./faq-data";
 
 const GROQ_KEY = process.env.GROQ_API_KEY || "";
 const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
@@ -33,7 +34,10 @@ function systemPrompt(): string {
     "задачу ИЛИ человек сам назвал конкретику (цвет, модель, категорию с параметром, площадь).\n\n" +
     "ИНСТРУМЕНТЫ (никогда не выдумывай товары/цены/наличие — только через них):\n" +
     "- search_products — подбор из базы; calc_quantity — сколько нужно на площадь; accessories_for — профиль/крепёж/клей;\n" +
+    "- search_faq — готовые ответы на вопросы (монтаж, уход, влага, доставка, гарантия);\n" +
     "- volume_discount — скидка за объём; add_to_cart — положить в корзину; save_lead — записать имя+телефон менеджеру.\n\n" +
+    "ВОПРОСЫ «как/можно ли/чем/сколько сохнет/подойдёт ли» (монтаж, уход, влагостойкость, доставка, гарантия) — " +
+    "ОТВЕЧАЙ через search_faq, не выдумывай. После ответа мягко верни к подбору/заказу.\n\n" +
     "РАЗДЕЛЫ → КАТЕГОРИИ:\n" +
     taxonomy() +
     "\nКатегорию в search_products передавай точным названием. «панели»=«Стеновые панели» (не луверы/профили); " +
@@ -146,6 +150,17 @@ const LEAD_TOOL = {
   },
 };
 
+const FAQ_TOOL = {
+  name: "search_faq",
+  description:
+    "Найти готовый ответ на вопрос о монтаже, раскрое, уходе, ремонте, влагостойкости, доставке, оплате, гарантии, подборе/расчёте. Используй, когда человек спрашивает «как / можно ли / чем / сколько сохнет / подойдёт ли», а не просит подобрать товар.",
+  parameters: {
+    type: "object",
+    properties: { query: { type: "string", description: "Суть вопроса пользователя" } },
+    required: ["query"],
+  },
+};
+
 type Card = ReturnType<typeof toCard>;
 
 function resolveProduct(ref: string) {
@@ -188,6 +203,11 @@ function runTool(
     if (!phone) return [{ error: "need_phone", note: "Нужен телефон покупателя." }, null, null];
     const lead = { type: "lead", name: String(args.name ?? ""), phone, summary: String(args.summary ?? "") };
     return [{ ok: true }, null, [lead]];
+  }
+
+  if (name === "search_faq") {
+    const answers = searchFaq(String(args.query ?? ""), 3);
+    return [{ answers, count: answers.length }, null, null];
   }
 
   if (name === "calc_quantity") {
@@ -312,6 +332,7 @@ export async function aiChat(messages: ChatMessage[]): Promise<ChatResult> {
     { type: "function", function: ACCESSORY_TOOL },
     { type: "function", function: ADDCART_TOOL },
     { type: "function", function: LEAD_TOOL },
+    { type: "function", function: FAQ_TOOL },
   ];
 
   let found: Card[] = [];
