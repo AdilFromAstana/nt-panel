@@ -1,0 +1,5601 @@
+[
+  {
+    "id": "1",
+    "name": "Лувер BW 61001",
+    "model": "",
+    "code_1c": "01-00000012",
+    "price": 14400,
+    "stock": 100,
+    "category_id": "5",
+    "preview_image": "/uploads/products/1-preview-dda175a1975e.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/1-0-7b17bfe13ba2.webp",
+      "/uploads/products/1-1-4327d763fa0c.webp",
+      "/uploads/products/1-2-6601f49907fc.webp"
+    ],
+    "attrs": {
+      "Цвет": "Айвори бежевый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "2",
+    "name": "ЛК BW 61009 Лувер конструктор",
+    "model": "",
+    "code_1c": "01-00000013",
+    "price": 7900,
+    "stock": 67,
+    "category_id": "5",
+    "preview_image": "/uploads/products/placeholder.jpg",
+    "description": "",
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Цвет": "Белый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "60х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "3",
+    "name": "Лувер SW50108 14см 2,8м",
+    "model": "",
+    "code_1c": "01-00000014",
+    "price": 14400,
+    "stock": 16,
+    "category_id": "5",
+    "preview_image": "/uploads/products/3-preview-9fcba3c7039b.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/3-0-427ae2a83164.webp",
+      "/uploads/products/3-1-875cdbb8c20b.webp",
+      "/uploads/products/3-2-b6f5a2fdb344.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Квадрат",
+      "Фактура": "Камень",
+      "Размер (мм)": "135х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "4",
+    "name": "Лувер MW 86106 ",
+    "model": "",
+    "code_1c": "01-00000015",
+    "price": 14400,
+    "stock": 0,
+    "category_id": "5",
+    "preview_image": "/uploads/products/4-preview-79e28bd9de08.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-03-11",
+        "units": 1
+      }
+    ],
+    "images": [
+      "/uploads/products/4-0-ca53823eb631.webp",
+      "/uploads/products/4-1-f4768a3f1df8.webp",
+      "/uploads/products/4-2-cd8e7c8ec723.webp"
+    ],
+    "attrs": {
+      "Цвет": "Сонома",
+      "Форма": "Мелкая Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "135х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "5",
+    "name": "Лувер GM 4028-MW86101",
+    "model": "",
+    "code_1c": "01-00000016",
+    "price": 14400,
+    "stock": 1,
+    "category_id": "5",
+    "preview_image": "/uploads/products/5-preview-8545a160df10.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/5-0-708fcd0a9939.webp",
+      "/uploads/products/5-1-b2b95ca89b0a.webp",
+      "/uploads/products/5-2-fe521cbb457f.webp"
+    ],
+    "attrs": {
+      "Цвет": "Сонома",
+      "Форма": "Квадрат",
+      "Фактура": "Шпон",
+      "Размер (мм)": "135х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "7",
+    "name": "Лувер ВНУТРЕНЯЯ волна GM 3017 -61007",
+    "model": "",
+    "code_1c": "01-00000018",
+    "price": 14400,
+    "stock": 35,
+    "category_id": "5",
+    "preview_image": "/uploads/products/7-preview-68d97421980d.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2025-09-18",
+        "units": 14
+      }
+    ],
+    "images": [
+      "/uploads/products/7-0-f5e98a96da0a.webp",
+      "/uploads/products/7-1-3baa8b8dc764.webp",
+      "/uploads/products/7-2-4329cc5695d1.webp"
+    ],
+    "attrs": {
+      "Цвет": "Бежевый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "8",
+    "name": "Лувер FG 76018",
+    "model": "",
+    "code_1c": "01-00000019",
+    "price": 14400,
+    "stock": 218,
+    "category_id": "5",
+    "preview_image": "/uploads/products/8-preview-ce75e07e114a.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/8-0-fe53cd48f8b7.webp",
+      "/uploads/products/8-1-e3d60ac7d422.webp",
+      "/uploads/products/8-2-3ec727a3cef4.webp"
+    ],
+    "attrs": {
+      "Цвет": "Тауп",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Матовый",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "9",
+    "name": "Лувер BW 61005 - 3014 Наружная волна",
+    "model": "Лувер BW 61005 - 3014",
+    "code_1c": "01-00000020",
+    "price": 14400,
+    "stock": 98,
+    "category_id": "5",
+    "preview_image": "/uploads/products/9-preview-831a159fec97.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/9-0-fca17bfc3ef1.webp",
+      "/uploads/products/9-1-9a3a263c2e1c.webp",
+      "/uploads/products/9-2-d3e2cbaaca0f.webp"
+    ],
+    "attrs": {
+      "Цвет": "Айвори бежевый",
+      "Форма": "Наружная волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "150x3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "10",
+    "name": "Лувер ВНУТРЕНЯЯ BW61006- 3016",
+    "model": "",
+    "code_1c": "01-00000021",
+    "price": 14400,
+    "stock": 174,
+    "category_id": "5",
+    "preview_image": "/uploads/products/10-preview-8112a99ff695.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/10-0-91be2695c808.webp",
+      "/uploads/products/10-1-0127b92147e3.webp",
+      "/uploads/products/10-2-270502660403.webp"
+    ],
+    "attrs": {
+      "Цвет": "Серый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "11",
+    "name": "Лувер Gm 7022",
+    "model": "",
+    "code_1c": "01-00000022",
+    "price": 14400,
+    "stock": 0,
+    "category_id": "5",
+    "preview_image": "/uploads/products/placeholder.jpg",
+    "description": "",
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Цвет": "Графит",
+      "Форма": "Мелкая Волна",
+      "Фактура": "Матовый",
+      "Размер (мм)": "150x3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "12",
+    "name": "Лувер FG 76014 белый Внутренняя ВОЛНА",
+    "model": "",
+    "code_1c": "01-00000023",
+    "price": 14400,
+    "stock": 57,
+    "category_id": "5",
+    "preview_image": "/uploads/products/12-preview-5de58c679727.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/12-0-ff4a976b0307.webp",
+      "/uploads/products/12-1-a1accad8709b.webp"
+    ],
+    "attrs": {
+      "Цвет": "Белый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000",
+      "Цвет панели": "Белый"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "13",
+    "name": "Лувер GM 5016 серые",
+    "model": "",
+    "code_1c": "01-00000024",
+    "price": 14400,
+    "stock": 21,
+    "category_id": "5",
+    "preview_image": "/uploads/products/13-preview-23ad1e5e7db1.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/13-0-628a62465435.webp",
+      "/uploads/products/13-1-57111a66c0ec.webp",
+      "/uploads/products/13-2-e0501c5f0954.webp"
+    ],
+    "attrs": {
+      "Цвет": "Серый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "14",
+    "name": "Лувер MW 86236",
+    "model": "",
+    "code_1c": "01-00000025",
+    "price": 14400,
+    "stock": 1,
+    "category_id": "5",
+    "preview_image": "/uploads/products/14-preview-52a13ea8f1ba.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/14-0-fe8263c451af.webp",
+      "/uploads/products/14-1-191c9b383107.webp",
+      "/uploads/products/14-2-4d46cf896239.webp"
+    ],
+    "attrs": {
+      "Цвет": "Сонома",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "15",
+    "name": "Лувер квадрат желтый",
+    "model": "",
+    "code_1c": "01-00000026",
+    "price": 14400,
+    "stock": 13,
+    "category_id": "5",
+    "preview_image": "/uploads/products/placeholder.jpg",
+    "description": "",
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Цвет": "Сонома",
+      "Форма": "Квадрат",
+      "Фактура": "Шпон",
+      "Размер (мм)": "150x3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "16",
+    "name": "Лувер GM 4014",
+    "model": "",
+    "code_1c": "01-00000027",
+    "price": 14400,
+    "stock": 2,
+    "category_id": "5",
+    "preview_image": "/uploads/products/16-preview-18a77075d127.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/16-0-be0e236fbd8b.webp",
+      "/uploads/products/16-1-9f88768efa99.webp",
+      "/uploads/products/16-2-92a99461858f.webp"
+    ],
+    "attrs": {
+      "Цвет": "Венге",
+      "Форма": "Мелкая Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "135х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "17",
+    "name": "Лувер GM 4017-86234 елка",
+    "model": "",
+    "code_1c": "01-00000028",
+    "price": 14400,
+    "stock": 37,
+    "category_id": "5",
+    "preview_image": "/uploads/products/17-preview-3bda233fb01a.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/17-0-21313b3930f4.webp",
+      "/uploads/products/17-1-713d691a7f46.webp",
+      "/uploads/products/17-2-c380385ded22.webp"
+    ],
+    "attrs": {
+      "Цвет": "Серый",
+      "Форма": "Мелкая Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "135х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "18",
+    "name": "Лувер GM 4036 Внутренняя ВОЛНА",
+    "model": "",
+    "code_1c": "01-00000029",
+    "price": 14400,
+    "stock": 417,
+    "category_id": "5",
+    "preview_image": "/uploads/products/18-preview-2ceadbf69336.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/18-0-b62066ca8d5e.webp",
+      "/uploads/products/18-1-b65481943d1f.webp",
+      "/uploads/products/18-2-731ce11e0fd9.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "19",
+    "name": "Лувер GM 5017 бронза",
+    "model": "",
+    "code_1c": "01-00000030",
+    "price": 14400,
+    "stock": 11,
+    "category_id": "5",
+    "preview_image": "/uploads/products/19-preview-2557e2b84ff9.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/19-0-834ae2d8ebea.webp",
+      "/uploads/products/19-1-13df640fdc50.webp",
+      "/uploads/products/19-2-395791cc372a.webp"
+    ],
+    "attrs": {
+      "Цвет": "Бронза",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "20",
+    "name": "ЛК GM 4022 Лувер конструктор",
+    "model": "",
+    "code_1c": "01-00000032",
+    "price": 7900,
+    "stock": 0,
+    "category_id": "5",
+    "preview_image": "/uploads/products/20-preview-e0e6bffeb643.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/20-0-e5f19354922e.webp"
+    ],
+    "attrs": {
+      "Цвет": "Сонома",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "60х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "21",
+    "name": "ЛК GM 4044 Лувер конструктор",
+    "model": "",
+    "code_1c": "01-00000033",
+    "price": 7900,
+    "stock": 38,
+    "category_id": "5",
+    "preview_image": "/uploads/products/21-preview-9427e86661cf.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2025-09-18",
+        "units": 2
+      }
+    ],
+    "images": [
+      "/uploads/products/21-0-a3e6a6ba4ef5.webp",
+      "/uploads/products/21-1-f41d041809fc.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Фактура": "Шпон",
+      "Размер (мм)": "60х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "22",
+    "name": "ЛК MW 86206 Лувер конструктор ",
+    "model": "",
+    "code_1c": "01-00000034",
+    "price": 7900,
+    "stock": 60,
+    "category_id": "5",
+    "preview_image": "/uploads/products/22-preview-80774c04488e.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/22-0-b89c7109b70f.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "60х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "23",
+    "name": "ЛК MW86127",
+    "model": "",
+    "code_1c": "01-00000306",
+    "price": 7900,
+    "stock": 2,
+    "category_id": "5",
+    "preview_image": "/uploads/products/23-preview-291b1918ec86.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/23-0-fead9918c8c9.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "60х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "24",
+    "name": "Профиль 5531 Гнущийся Бронза",
+    "model": null,
+    "code_1c": "01-00000036",
+    "price": 7400,
+    "stock": 217,
+    "category_id": "6",
+    "preview_image": "/uploads/products/placeholder.jpg",
+    "description": null,
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {},
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "25",
+    "name": "Профиль 5531 Гнущийся Черный",
+    "model": null,
+    "code_1c": "01-00000037",
+    "price": 7400,
+    "stock": 246,
+    "category_id": "6",
+    "preview_image": "/uploads/products/placeholder.jpg",
+    "description": null,
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {},
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "26",
+    "name": "DH 147 профиль с подсветкой угловой старт БРОНЗА 5мм",
+    "model": "",
+    "code_1c": "01-00000038",
+    "price": 7400,
+    "stock": 57,
+    "category_id": "6",
+    "preview_image": "/uploads/products/26/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/26/0/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "27",
+    "name": "DH 147 профиль с подсветкой угловой старт ЧЕРНЫЙ 5мм",
+    "model": "",
+    "code_1c": "01-00000039",
+    "price": 7400,
+    "stock": 219,
+    "category_id": "6",
+    "preview_image": "/uploads/products/27/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/27/0/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "28",
+    "name": "Е 06 соед профиль Бронза",
+    "model": "",
+    "code_1c": "01-00000040",
+    "price": 3200,
+    "stock": 2326,
+    "category_id": "6",
+    "preview_image": "/uploads/products/28/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/28/0/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "29",
+    "name": "Е 06 соед профиль Черный ",
+    "model": "",
+    "code_1c": "01-00000041",
+    "price": 3200,
+    "stock": 2874,
+    "category_id": "6",
+    "preview_image": "/uploads/products/29/0/400.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-30",
+        "units": 600
+      }
+    ],
+    "images": [
+      "/uploads/products/29/0/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "30",
+    "name": "DH 147 профиль с подсветкой угловой старт ЧЕРНЫЙ 8мм",
+    "model": "",
+    "code_1c": "01-00000042",
+    "price": 7400,
+    "stock": 98,
+    "category_id": "6",
+    "preview_image": "/uploads/products/placeholder.jpg",
+    "description": "",
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "31",
+    "name": "5504 Заглушка Матовое ЗОЛОТО",
+    "model": "",
+    "code_1c": "01-00000043",
+    "price": 3700,
+    "stock": 946,
+    "category_id": "6",
+    "preview_image": "/uploads/products/31-preview-7e7593388acd.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/31-0-6cf63f71c3a5.webp",
+      "/uploads/products/31-1-1310d2919de3.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Матовое золото"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "32",
+    "name": "5504 Заглушка Бронза",
+    "model": "",
+    "code_1c": "01-00000044",
+    "price": 3700,
+    "stock": 4670,
+    "category_id": "6",
+    "preview_image": "/uploads/products/32-preview-7ad91b634c81.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/32-0-6386e1bb6573.webp",
+      "/uploads/products/32-1-ca44dcbb4021.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Бронза"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "33",
+    "name": "5504 Заглушка Черная",
+    "model": "",
+    "code_1c": "01-00000045",
+    "price": 3700,
+    "stock": 8581,
+    "category_id": "6",
+    "preview_image": "/uploads/products/33/0/400.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-30",
+        "units": 1000
+      }
+    ],
+    "images": [
+      "/uploads/products/33/0/1200.webp",
+      "/uploads/products/33-1-2c9f34870dbe.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "34",
+    "name": "5505 Соед с щелью П Бронза",
+    "model": "",
+    "code_1c": "01-00000046",
+    "price": 4200,
+    "stock": 4110,
+    "category_id": "6",
+    "preview_image": "/uploads/products/34-preview-de07a792d590.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/34-0-83ed74f7bf97.webp",
+      "/uploads/products/34-1-9ac008c23374.webp",
+      "/uploads/products/34-2-c318d77b90ad.webp",
+      "/uploads/products/34-3-c1290acb5299.webp",
+      "/uploads/products/34-4-1bb9ba419858.webp",
+      "/uploads/products/34-5-9c39c09f41ad.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Бронза"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "35",
+    "name": "5505 Соед с щелью П Черный",
+    "model": "",
+    "code_1c": "01-00000047",
+    "price": 4200,
+    "stock": 3873,
+    "category_id": "6",
+    "preview_image": "/uploads/products/35-preview-b6915b3878a2.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-30",
+        "units": 1000
+      }
+    ],
+    "images": [
+      "/uploads/products/35-0-e472a4d168b3.webp",
+      "/uploads/products/35-1-58f9a187b72a.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "36",
+    "name": "5505 8мм Соед с щелью Бронза ",
+    "model": "",
+    "code_1c": "01-00000048",
+    "price": 4200,
+    "stock": 97,
+    "category_id": "6",
+    "preview_image": "/uploads/products/36-preview-1bb22906faa9.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/36-0-d21785390ea1.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Бронза"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "37",
+    "name": "5503 соеденитель без щели Т Черный",
+    "model": "",
+    "code_1c": "01-00000049",
+    "price": 3700,
+    "stock": 6038,
+    "category_id": "6",
+    "preview_image": "/uploads/products/37-preview-9a23333040a0.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-30",
+        "units": 10000
+      }
+    ],
+    "images": [
+      "/uploads/products/37-0-f47f77eb934d.webp",
+      "/uploads/products/37-1-7aab2a4a7235.webp",
+      "/uploads/products/37-2-ef37cadab794.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "38",
+    "name": "5503 соединитель без щели Т Бронза",
+    "model": "",
+    "code_1c": "01-00000050",
+    "price": 3700,
+    "stock": 4342,
+    "category_id": "6",
+    "preview_image": "/uploads/products/38-preview-48ebb1c63196.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/38-0-401363e73ff3.webp",
+      "/uploads/products/38-1-2063e886fa1d.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Бронза"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "39",
+    "name": "5503 соединитель без щели Т Бронза 8мм",
+    "model": "",
+    "code_1c": "01-00000051",
+    "price": 3700,
+    "stock": 72,
+    "category_id": "6",
+    "preview_image": "/uploads/products/39-preview-da8bed0216fc.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/39-0-089d2a2b1e93.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Бронза"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "40",
+    "name": "5503 соединитель без щели Т Черный 8мм",
+    "model": "",
+    "code_1c": "01-00000052",
+    "price": 3700,
+    "stock": 464,
+    "category_id": "6",
+    "preview_image": "/uploads/products/40-preview-39f384f1d55f.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/40-0-5682fd76638e.webp",
+      "/uploads/products/40-1-0c41a0dfe57d.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "41",
+    "name": "5502  Угол внутренний Черный",
+    "model": "",
+    "code_1c": "01-00000053",
+    "price": 5300,
+    "stock": 1368,
+    "category_id": "6",
+    "preview_image": "/uploads/products/41-preview-2fe348fef0fd.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-30",
+        "units": 1000
+      }
+    ],
+    "images": [
+      "/uploads/products/41-0-847b7da4e289.webp",
+      "/uploads/products/41-1-b947d54690d3.webp",
+      "/uploads/products/41-2-4ec7e36ab92f.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "42",
+    "name": "5502  Угол внутренний Бронза",
+    "model": "",
+    "code_1c": "01-00000054",
+    "price": 5300,
+    "stock": 673,
+    "category_id": "6",
+    "preview_image": "/uploads/products/42-preview-85e569b97691.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/42-0-4003bd676872.webp",
+      "/uploads/products/42-1-c3985c69e93f.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Бронза"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "43",
+    "name": "5502 8мм Черный",
+    "model": "",
+    "code_1c": "01-00000055",
+    "price": 5300,
+    "stock": 186,
+    "category_id": "6",
+    "preview_image": "/uploads/products/43-preview-a09ec9b3ebb4.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/43-0-d6b5b33ec925.webp",
+      "/uploads/products/43-1-0b3c1a7d5367.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "44",
+    "name": "15*15 наружный угол прямой Черный",
+    "model": "",
+    "code_1c": "01-00000056",
+    "price": 5300,
+    "stock": 0,
+    "category_id": "6",
+    "preview_image": "/uploads/products/44-preview-4a8b12593c1c.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/44-0-5022c57b70c9.webp",
+      "/uploads/products/44-1-5dafcfae8826.webp"
+    ],
+    "attrs": {
+      "Размер": "15*15*3000",
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "45",
+    "name": "15*15 наружный угол прямой Бронза",
+    "model": "",
+    "code_1c": "01-00000057",
+    "price": 5300,
+    "stock": 0,
+    "category_id": "6",
+    "preview_image": "/uploads/products/45-preview-a31993542fee.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/45-0-087f512e0e1d.webp"
+    ],
+    "attrs": {
+      "Размер": "15*15*3000"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "46",
+    "name": "5521 внешний угол Черный 45",
+    "model": "",
+    "code_1c": "01-00000058",
+    "price": 5300,
+    "stock": 10,
+    "category_id": "6",
+    "preview_image": "/uploads/products/46-preview-eef20a0948fb.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/46-0-fa5b6c2821a1.webp",
+      "/uploads/products/46-1-9b09548d24e8.webp"
+    ],
+    "attrs": {
+      "Размер": "10*10*3000",
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "47",
+    "name": "5506 плинтус Черный",
+    "model": "",
+    "code_1c": "01-00000059",
+    "price": 8400,
+    "stock": 570,
+    "category_id": "6",
+    "preview_image": "/uploads/products/47-preview-3008e9082b43.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/47-0-2bf9ecae7c64.webp",
+      "/uploads/products/47-1-fbf89f855b23.webp",
+      "/uploads/products/47-2-a5d335d5575e.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "48",
+    "name": "5512 Бронз Соед подсветка 4мм П",
+    "model": "",
+    "code_1c": "01-00000060",
+    "price": 5300,
+    "stock": 673,
+    "category_id": "6",
+    "preview_image": "/uploads/products/48-preview-b684661795fa.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/48-0-caf2f8691256.webp",
+      "/uploads/products/48-1-ace4d3f5266b.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Бронза"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "49",
+    "name": "5512 Черный Соед подсветка 4мм П",
+    "model": "",
+    "code_1c": "01-00000061",
+    "price": 5300,
+    "stock": 464,
+    "category_id": "6",
+    "preview_image": "/uploads/products/49-preview-b3fdc735ea71.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/49-0-0d3c2e737820.webp",
+      "/uploads/products/49-1-d3cd7e156cd7.webp",
+      "/uploads/products/49-2-dfe2a22bff50.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "50",
+    "name": "Клей SOUDAL 600г",
+    "model": "",
+    "code_1c": "01-00000068",
+    "price": 4200,
+    "stock": 133,
+    "category_id": "7",
+    "preview_image": "/uploads/products/50-preview-7e040f78f8f5.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/50-0-d638475c8b5f.webp"
+    ],
+    "attrs": {},
+    "category_name": "Материалы крепления",
+    "category_slug": "materiali-kreplenia",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "51",
+    "name": "Пена клей Easy Soudabond Gun Turbo 750мл",
+    "model": null,
+    "code_1c": "01-00000069",
+    "price": 4095,
+    "stock": 123,
+    "category_id": "7",
+    "preview_image": "/uploads/products/51/0/400.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/51/0/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Материалы крепления",
+    "category_slug": "materiali-kreplenia",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "52",
+    "name": "ФиксАлл НТ белый 290мл тюбик для кирпичей",
+    "model": "",
+    "code_1c": "01-00000070",
+    "price": 3255,
+    "stock": 34,
+    "category_id": "7",
+    "preview_image": "/uploads/products/52/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/52/0/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Материалы крепления",
+    "category_slug": "materiali-kreplenia",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "53",
+    "name": "BG 90061 ткань плетен",
+    "model": "",
+    "code_1c": "01-00000071",
+    "price": 67200,
+    "stock": 35,
+    "category_id": "4",
+    "preview_image": "/uploads/products/53-preview-4cce8ffe7b49.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/53-0-6a27a40e321e.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Плетёная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "54",
+    "name": "BG 90066 ткань",
+    "model": "",
+    "code_1c": "01-00000072",
+    "price": 67200,
+    "stock": 55,
+    "category_id": "4",
+    "preview_image": "/uploads/products/54-preview-cdc0ea5b3412.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/54-0-77d27adf3954.webp",
+      "/uploads/products/54-1-f62f991d147a.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Плетёная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "55",
+    "name": "BG 90072 ткань",
+    "model": "",
+    "code_1c": "01-00000073",
+    "price": 67200,
+    "stock": 156,
+    "category_id": "4",
+    "preview_image": "/uploads/products/55-preview-7ed33991980a.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/55-0-8b74141f55f8.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Плетёная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "56",
+    "name": "BW 61001 ткань",
+    "model": "",
+    "code_1c": "01-00000074",
+    "price": 61950,
+    "stock": 18,
+    "category_id": "4",
+    "preview_image": "/uploads/products/56-preview-47f668dce51e.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/56-0-68e59b0daa18.webp",
+      "/uploads/products/56-1-34035b64646b.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Плетёная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "57",
+    "name": "BW 61004 ткань",
+    "model": "",
+    "code_1c": "01-00000075",
+    "price": 61950,
+    "stock": 89,
+    "category_id": "4",
+    "preview_image": "/uploads/products/57/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/57/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "58",
+    "name": "BW 61005- GM 3014 ткань",
+    "model": "",
+    "code_1c": "01-00000076",
+    "price": 61950,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/58-preview-0c59c00f9275.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-01-16",
+        "units": 4
+      }
+    ],
+    "images": [
+      "/uploads/products/58-0-e4c93d01128d.webp",
+      "/uploads/products/58-live-video.mp4",
+      "/uploads/products/58-1-994b2ce97fc7.webp",
+      "/uploads/products/58-live-kitchen.jpg",
+      "/uploads/products/58-live-bedroom.jpg"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Плетёная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "59",
+    "name": "BW 61006- GM 3016 ткань",
+    "model": "",
+    "code_1c": "01-00000077",
+    "price": 61950,
+    "stock": 212,
+    "category_id": "4",
+    "preview_image": "/uploads/products/59-preview-5909fa5bb185.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/59-0-9dddf275e9e0.webp",
+      "/uploads/products/59-live-anim.gif",
+      "/uploads/products/59-live-kitchen.jpg",
+      "/uploads/products/59-live-bedroom.jpg"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Плетёная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "60",
+    "name": "BW 61007 - GM 3017 ткань",
+    "model": "",
+    "code_1c": "01-00000078",
+    "price": 61950,
+    "stock": 191,
+    "category_id": "4",
+    "preview_image": "/uploads/products/60-preview-6cd3c3ce3a03.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/60-0-ff8a59cc2df5.webp",
+      "/uploads/products/60-1-884236bc6132.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Плетёная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "61",
+    "name": "BW 61009 ткань",
+    "model": "",
+    "code_1c": "01-00000079",
+    "price": 61950,
+    "stock": 76,
+    "category_id": "4",
+    "preview_image": "/uploads/products/61-preview-a2123fd2828f.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/61-0-63e793278db4.webp",
+      "/uploads/products/61-1-05fea8daa2bc.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Белый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "62",
+    "name": "BW 61014 ткань",
+    "model": "",
+    "code_1c": "01-00000080",
+    "price": 61950,
+    "stock": 96,
+    "category_id": "4",
+    "preview_image": "/uploads/products/62-preview-05118a99e5dc.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/62-0-0e7d16cad879.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "63",
+    "name": "Y 1007-28 кожа сер плетенка",
+    "model": "",
+    "code_1c": "01-00000081",
+    "price": 65625,
+    "stock": 38,
+    "category_id": "4",
+    "preview_image": "/uploads/products/63-preview-52a6239967e8.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/63-0-d799922b3caa.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Кожа",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "64",
+    "name": "Y 1007-64 кожа светло беж плетенка",
+    "model": "",
+    "code_1c": "01-00000082",
+    "price": 65625,
+    "stock": 29,
+    "category_id": "4",
+    "preview_image": "/uploads/products/64-preview-5eaae1c597ee.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/64-0-1968f5dda68b.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Кожа",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "65",
+    "name": "Y 1007-67 кожа айвори плетенка",
+    "model": "",
+    "code_1c": "01-00000083",
+    "price": 65625,
+    "stock": 23,
+    "category_id": "4",
+    "preview_image": "/uploads/products/65-preview-5d276c2ffb04.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/65-0-4dc695cfc934.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Кожа",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "66",
+    "name": "Y 1007-74 кожа серо - беж плетенка",
+    "model": "",
+    "code_1c": "01-00000084",
+    "price": 65625,
+    "stock": 34,
+    "category_id": "4",
+    "preview_image": "/uploads/products/66-preview-fa015c6e9d2d.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/66-0-322628f6d128.webp",
+      "/uploads/products/66-live-kitchen.jpg",
+      "/uploads/products/66-live-bedroom.jpg"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Кожа",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "67",
+    "name": "XY9006 латунь",
+    "model": "",
+    "code_1c": "01-00000085",
+    "price": 97020,
+    "stock": 49,
+    "category_id": "4",
+    "preview_image": "/uploads/products/67-preview-4a02d53b159f.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/67-0-8f62f40549a2.webp",
+      "/uploads/products/67-1-2e132d2133bb.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бронза",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Металл"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "68",
+    "name": "XY9004 бронза",
+    "model": "",
+    "code_1c": "01-00000011",
+    "price": 97020,
+    "stock": 126,
+    "category_id": "4",
+    "preview_image": "/uploads/products/68/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/68/0/1200.webp",
+      "/uploads/products/68-1-72e0a13b0568.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бронза",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Металл"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "69",
+    "name": "XY9003 металл",
+    "model": "",
+    "code_1c": "01-00000086",
+    "price": 97020,
+    "stock": 127,
+    "category_id": "4",
+    "preview_image": "/uploads/products/69/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/69/0/1200.webp",
+      "/uploads/products/69-1-8231cfb3007a.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серебро",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Металл"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "70",
+    "name": "MW 86321 дерево",
+    "model": "",
+    "code_1c": "01-00000087",
+    "price": 52500,
+    "stock": 59,
+    "category_id": "4",
+    "preview_image": "/uploads/products/70/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/70/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Венге",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "71",
+    "name": "MW 86320 дерево",
+    "model": "",
+    "code_1c": "01-00000088",
+    "price": 52500,
+    "stock": 26,
+    "category_id": "4",
+    "preview_image": "/uploads/products/71/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/71/0/1200.webp",
+      "/uploads/products/71-1-94c54cec47d8.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Венге",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Дерево",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "72",
+    "name": "MW 86312 - GM 4014 дерево",
+    "model": "",
+    "code_1c": "01-00000089",
+    "price": 52500,
+    "stock": 254,
+    "category_id": "4",
+    "preview_image": "/uploads/products/72/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/72/0/1200.webp",
+      "/uploads/products/72-1-40672fe0c395.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Венге",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "73",
+    "name": "MW 86307 - GM 4010 дерево",
+    "model": "",
+    "code_1c": "01-00000090",
+    "price": 52500,
+    "stock": 5,
+    "category_id": "4",
+    "preview_image": "/uploads/products/73/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/73/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Венге",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "74",
+    "name": "MW 86303 дерево",
+    "model": "",
+    "code_1c": "01-00000091",
+    "price": 52500,
+    "stock": 76,
+    "category_id": "4",
+    "preview_image": "/uploads/products/74/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/74/0/1200.webp"
+    ],
+    "attrs": {
+      "Фактура панели": "Дерево"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "75",
+    "name": "MW 86236 дерево",
+    "model": "",
+    "code_1c": "01-00000092",
+    "price": 52500,
+    "stock": 11,
+    "category_id": "4",
+    "preview_image": "/uploads/products/75/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/75/0/1200.webp",
+      "/uploads/products/75-1-8f6877673752.webp",
+      "/uploads/products/75-2-04d2875bb7f9.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "76",
+    "name": "MW 86235 елка дерево темная",
+    "model": "",
+    "code_1c": "01-00000093",
+    "price": 52500,
+    "stock": 128,
+    "category_id": "4",
+    "preview_image": "/uploads/products/76/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/76/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Черный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "77",
+    "name": "MW 86233 дерево",
+    "model": "",
+    "code_1c": "01-00000094",
+    "price": 52500,
+    "stock": 158,
+    "category_id": "4",
+    "preview_image": "/uploads/products/77/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/77/0/1200.webp",
+      "/uploads/products/77-1-d162fdc34f05.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "78",
+    "name": "MW 86229 дерево",
+    "model": "",
+    "code_1c": "01-00000095",
+    "price": 52500,
+    "stock": 75,
+    "category_id": "4",
+    "preview_image": "/uploads/products/78/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/78/0/1200.webp"
+    ],
+    "attrs": {
+      "Фактура панели": "Дерево"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "79",
+    "name": "MW 86226 дерево",
+    "model": "",
+    "code_1c": "01-00000096",
+    "price": 52500,
+    "stock": 33,
+    "category_id": "4",
+    "preview_image": "/uploads/products/79/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/79/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "80",
+    "name": "MW 86210 дерево",
+    "model": "",
+    "code_1c": "01-00000097",
+    "price": 52500,
+    "stock": 29,
+    "category_id": "4",
+    "preview_image": "/uploads/products/80/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/80/0/1200.webp",
+      "/uploads/products/80-1-b3eb64a89d67.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Венге",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "81",
+    "name": "MW 86208 дерево",
+    "model": "",
+    "code_1c": "01-00000098",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/81/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/81/0/1200.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "82",
+    "name": "MW 86207 дерево",
+    "model": "",
+    "code_1c": "01-00000099",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/82/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/82/0/1200.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Дерево"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "83",
+    "name": "MW 86206 дерево",
+    "model": "",
+    "code_1c": "01-00000100",
+    "price": 52500,
+    "stock": 23,
+    "category_id": "4",
+    "preview_image": "/uploads/products/83/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/83/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "84",
+    "name": "MW 86201 дерево",
+    "model": "",
+    "code_1c": "01-00000101",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/84/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/84/0/1200.webp",
+      "/uploads/products/84-1-cdcecf89d83e.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "85",
+    "name": "MW 86122 дерево",
+    "model": "",
+    "code_1c": "01-00000102",
+    "price": 52500,
+    "stock": 17,
+    "category_id": "4",
+    "preview_image": "/uploads/products/85/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/85/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "86",
+    "name": "MW 86111 дерево",
+    "model": "",
+    "code_1c": "01-00000103",
+    "price": 52500,
+    "stock": 2,
+    "category_id": "4",
+    "preview_image": "/uploads/products/86/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/86/0/1200.webp",
+      "/uploads/products/86-1-40ba9ac174a6.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Сонома",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "87",
+    "name": "MW 86106 дерево",
+    "model": "",
+    "code_1c": "01-00000104",
+    "price": 52500,
+    "stock": 48,
+    "category_id": "4",
+    "preview_image": "/uploads/products/87/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/87/0/1200.webp",
+      "/uploads/products/87-1-bc0940ff48c3.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Сонома",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "88",
+    "name": "GM 8019 металл медный",
+    "model": "",
+    "code_1c": "01-00000105",
+    "price": 70875,
+    "stock": 28,
+    "category_id": "4",
+    "preview_image": "/uploads/products/88-preview-6b71036ffbb8.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/88-0-ec8e0a9f2283.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Медный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Металл",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "89",
+    "name": "GM 8018 металл красный",
+    "model": "",
+    "code_1c": "01-00000106",
+    "price": 70875,
+    "stock": 30,
+    "category_id": "4",
+    "preview_image": "/uploads/products/89-preview-529787c9e143.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/89-0-c7ec63562ba5.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Красный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Металл",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "90",
+    "name": "GM 7022 матовый велас",
+    "model": "",
+    "code_1c": "01-00000107",
+    "price": 70350,
+    "stock": 276,
+    "category_id": "4",
+    "preview_image": "/uploads/products/90-preview-37f9792ac92e.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/90-0-4d003d4169d3.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Графит",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Soft-touch"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "91",
+    "name": "GM 7009 красное зеркало",
+    "model": "",
+    "code_1c": "01-00000108",
+    "price": 70875,
+    "stock": 24,
+    "category_id": "4",
+    "preview_image": "/uploads/products/91-preview-dda6dd1f1c2b.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/91-0-13257f695031.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Зеркало",
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "92",
+    "name": "GM 7007 темное зеркало",
+    "model": "",
+    "code_1c": "01-00000109",
+    "price": 70875,
+    "stock": 94,
+    "category_id": "4",
+    "preview_image": "/uploads/products/92-preview-4300815146d9.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/92-0-ddc83fdded36.webp",
+      "/uploads/products/92-1-2798ad17493a.webp",
+      "/uploads/products/92-2-c567d4409ac2.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Зеркало",
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "93",
+    "name": "GM 7004 Глянец",
+    "model": "",
+    "code_1c": "01-00000110",
+    "price": 70350,
+    "stock": 64,
+    "category_id": "4",
+    "preview_image": "/uploads/products/93/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/93/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Белый",
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "94",
+    "name": "GM 6015 кожа",
+    "model": "",
+    "code_1c": "01-00000111",
+    "price": 61950,
+    "stock": 156,
+    "category_id": "4",
+    "preview_image": "/uploads/products/94-preview-6dd17b9d7ca7.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-03-24",
+        "units": 2
+      }
+    ],
+    "images": [
+      "/uploads/products/94-0-e9728f2780fc.webp",
+      "/uploads/products/94-1-b52347a96921.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Кожа",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "95",
+    "name": "GM 6014 Кожа",
+    "model": "",
+    "code_1c": "01-00000112",
+    "price": 61950,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/95-preview-0b5fbe7cf5c2.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/95-0-737e10140688.webp",
+      "/uploads/products/95-1-93771bd2da28.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Белый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Кожа",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "96",
+    "name": "GM 5020",
+    "model": "",
+    "code_1c": "01-00000113",
+    "price": 70350,
+    "stock": 155,
+    "category_id": "4",
+    "preview_image": "/uploads/products/96-preview-57af6d49e15d.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/96-0-5e699f92f515.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Белый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "97",
+    "name": "GM 5019",
+    "model": "",
+    "code_1c": "01-00000114",
+    "price": 70350,
+    "stock": 124,
+    "category_id": "4",
+    "preview_image": "/uploads/products/97-preview-b799f420e5aa.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/97-0-4492d96bd611.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Белый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "98",
+    "name": "GM 5017 ткань бронза",
+    "model": "",
+    "code_1c": "01-00000115",
+    "price": 63420,
+    "stock": 12,
+    "category_id": "4",
+    "preview_image": "/uploads/products/98-preview-c64919d70450.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/98-0-1d7959f27ecf.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бронза",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "99",
+    "name": "GM 5016 ткань серая",
+    "model": "",
+    "code_1c": "01-00000116",
+    "price": 63420,
+    "stock": 28,
+    "category_id": "4",
+    "preview_image": "/uploads/products/99-preview-a29511f15251.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/99-0-743682ddf2bb.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "100",
+    "name": "GM 4046 дерево",
+    "model": "",
+    "code_1c": "01-00000117",
+    "price": 52500,
+    "stock": 199,
+    "category_id": "4",
+    "preview_image": "/uploads/products/100-preview-e12fd6fbe6e2.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/100-0-e58cc94fbaea.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "101",
+    "name": "GM 4045 дерево",
+    "model": "",
+    "code_1c": "01-00000118",
+    "price": 52500,
+    "stock": 270,
+    "category_id": "4",
+    "preview_image": "/uploads/products/101-preview-39ff5f54575b.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/101-0-1db57a06e07b.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "102",
+    "name": "GM 4044 дерево",
+    "model": "",
+    "code_1c": "01-00000119",
+    "price": 52500,
+    "stock": 94,
+    "category_id": "4",
+    "preview_image": "/uploads/products/102-preview-7e7495a9cfe8.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/102-0-cf9fd7207ea6.webp",
+      "/uploads/products/102-1-c03659295af3.webp",
+      "/uploads/products/102-2-a4b869198772.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "103",
+    "name": "GM 4036 дерево",
+    "model": "",
+    "code_1c": "01-00000120",
+    "price": 52500,
+    "stock": 246,
+    "category_id": "4",
+    "preview_image": "/uploads/products/103-preview-66005fd313cd.webp",
+    "description": "Бамбуковая NTpanel – натуральный, прочный и экологичный материал, предназначенный для отделки стен, потолков и мебели.\n",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/103-0-e28f86580146.webp",
+      "/uploads/products/103-1-b5c8941aaec9.webp",
+      "/uploads/products/103-2-15e6dd750137.webp",
+      "/uploads/products/103-3-aa2209b751d4.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "104",
+    "name": "GM 4034 дерево",
+    "model": "",
+    "code_1c": "01-00000121",
+    "price": 52500,
+    "stock": 16,
+    "category_id": "4",
+    "preview_image": "/uploads/products/104-preview-8decc8132c26.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/104-0-799e34d5d16c.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Сонома",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "105",
+    "name": "GM 4031 дерево",
+    "model": "",
+    "code_1c": "01-00000122",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/105-preview-5a2375083aad.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/105-0-199f250deaea.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "106",
+    "name": " MW 86224- GM 4029 дерево",
+    "model": "",
+    "code_1c": "01-00000124",
+    "price": 52500,
+    "stock": 1,
+    "category_id": "4",
+    "preview_image": "/uploads/products/106/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/106/0/1200.webp",
+      "/uploads/products/106-1-34a0bbf79b64.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "107",
+    "name": "GM 4025 сер дерево",
+    "model": "",
+    "code_1c": "01-00000125",
+    "price": 52500,
+    "stock": 13,
+    "category_id": "4",
+    "preview_image": "/uploads/products/107-preview-5557aae7ce78.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/107-0-764a3f8986ca.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "108",
+    "name": " MW 86127- GM 4022 дерево",
+    "model": "",
+    "code_1c": "01-00000126",
+    "price": 52500,
+    "stock": 38,
+    "category_id": "4",
+    "preview_image": "/uploads/products/108/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/108/0/1200.webp",
+      "/uploads/products/108-1-265d0b64e34c.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "109",
+    "name": " MW 86234 -GM 4017 дерево",
+    "model": "",
+    "code_1c": "01-00000127",
+    "price": 52500,
+    "stock": 137,
+    "category_id": "4",
+    "preview_image": "/uploads/products/109/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/109/0/1200.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "110",
+    "name": "MW 86117 - GM 4013 дерево",
+    "model": "",
+    "code_1c": "01-00000128",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/110/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/110/0/1200.webp",
+      "/uploads/products/110-1-5759508a0264.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Сонома",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "111",
+    "name": "MW 86306 - GM 4008 дерево",
+    "model": "",
+    "code_1c": "01-00000129",
+    "price": 52500,
+    "stock": 102,
+    "category_id": "4",
+    "preview_image": "/uploads/products/111/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/111/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Венге",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "112",
+    "name": "GM 2002 МРАМОР белый",
+    "model": "",
+    "code_1c": "01-00000130",
+    "price": 52500,
+    "stock": 30,
+    "category_id": "4",
+    "preview_image": "/uploads/products/112-preview-2fcae77ee681.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/112-0-77ae1399e174.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Белый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Мрамор",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "113",
+    "name": " FG 76010 - GM 1018 черная ночь",
+    "model": "",
+    "code_1c": "01-00000131",
+    "price": 56700,
+    "stock": 16,
+    "category_id": "4",
+    "preview_image": "/uploads/products/113-preview-9ff41b3807a8.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/113-0-afc75e95bb5c.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Черный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "С блёстками"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "114",
+    "name": " GM 6012 - FG 76027 кожа теракот",
+    "model": "",
+    "code_1c": "01-00000132",
+    "price": 61950,
+    "stock": 39,
+    "category_id": "4",
+    "preview_image": "/uploads/products/114-preview-2f655d2cc4b8.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/114-0-b60898f6229c.webp",
+      "/uploads/products/114-1-920ae90890ba.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Терракотовый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Кожа",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "115",
+    "name": "FG 76020 матовый",
+    "model": "",
+    "code_1c": "01-00000133",
+    "price": 52500,
+    "stock": 45,
+    "category_id": "4",
+    "preview_image": "/uploads/products/115/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/115/0/1200.webp",
+      "/uploads/products/115-1-c884bcb56d23.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "116",
+    "name": "FG 76019 матовый",
+    "model": "",
+    "code_1c": "01-00000134",
+    "price": 52500,
+    "stock": 42,
+    "category_id": "4",
+    "preview_image": "/uploads/products/116/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/116/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "117",
+    "name": "FG 76018 матовый тауп",
+    "model": "",
+    "code_1c": "01-00000135",
+    "price": 52500,
+    "stock": 209,
+    "category_id": "4",
+    "preview_image": "/uploads/products/117/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/117/0/1200.webp",
+      "/uploads/products/117-1-483f154e45ee.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Тауп",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "118",
+    "name": "FG 76017 матовый",
+    "model": "",
+    "code_1c": "01-00000136",
+    "price": 52500,
+    "stock": 228,
+    "category_id": "4",
+    "preview_image": "/uploads/products/118/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/118/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Айвори бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "119",
+    "name": "FG 76016 матовый ",
+    "model": "",
+    "code_1c": "01-00000137",
+    "price": 52500,
+    "stock": 348,
+    "category_id": "4",
+    "preview_image": "/uploads/products/119-preview-c3a00ec5fac1.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/119-0-df9978ab0e47.webp",
+      "/uploads/products/119-1-71d877365892.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Белый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "120",
+    "name": "FG 76015 ",
+    "model": "",
+    "code_1c": "01-00000138",
+    "price": 52500,
+    "stock": 176,
+    "category_id": "4",
+    "preview_image": "/uploads/products/120-preview-b8122bea77c3.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/120-0-a7278bbc0bc4.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "121",
+    "name": "FG 76012 беж, блестки",
+    "model": "",
+    "code_1c": "01-00000139",
+    "price": 56700,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/121/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/121/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "С блёстками",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "122",
+    "name": "FG 76011 с блестком",
+    "model": "",
+    "code_1c": "01-00000140",
+    "price": 56700,
+    "stock": 38,
+    "category_id": "4",
+    "preview_image": "/uploads/products/122-preview-44c470ff7be8.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/122-0-c72dcfb78b5a.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "123",
+    "name": "GM 7005 Зеркало",
+    "model": "",
+    "code_1c": "01-00000141",
+    "price": 70875,
+    "stock": 2,
+    "category_id": "4",
+    "preview_image": "/uploads/products/123-preview-314b9c38ad8c.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/123-0-2171ea1da19e.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Зеркало",
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "124",
+    "name": "MW 86318 дерево",
+    "model": "",
+    "code_1c": "01-00000142",
+    "price": 52500,
+    "stock": 40,
+    "category_id": "4",
+    "preview_image": "/uploads/products/124/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/124/0/1200.webp",
+      "/uploads/products/124-1-c1ad9faaf638.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Венге",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "125",
+    "name": "MW 86102 дерево",
+    "model": "",
+    "code_1c": "01-00000143",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/125/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/125/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Сонома",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "126",
+    "name": "SW 50102 мрамор",
+    "model": "",
+    "code_1c": "01-00000144",
+    "price": 52500,
+    "stock": 23,
+    "category_id": "4",
+    "preview_image": "/uploads/products/126/0/400.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-01-16",
+        "units": 1
+      }
+    ],
+    "images": [
+      "/uploads/products/126/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Черный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Мрамор",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "127",
+    "name": "SW 50103 бетон",
+    "model": "",
+    "code_1c": "01-00000145",
+    "price": 52500,
+    "stock": 23,
+    "category_id": "4",
+    "preview_image": "/uploads/products/127-preview.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/127-0.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Бетон"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "128",
+    "name": "SW 50104 камень",
+    "model": "",
+    "code_1c": "01-00000146",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/128/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/128/0/1200.webp"
+    ],
+    "attrs": {
+      "Фактура панели": "Камень"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "129",
+    "name": "SW 50108 камень ",
+    "model": "",
+    "code_1c": "01-00000147",
+    "price": 52500,
+    "stock": 37,
+    "category_id": "4",
+    "preview_image": "/uploads/products/129/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/129/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Бежевый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Камень",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "130",
+    "name": "SW 50121 мрамор черн",
+    "model": "",
+    "code_1c": "01-00000148",
+    "price": 52500,
+    "stock": 44,
+    "category_id": "4",
+    "preview_image": "/uploads/products/130-preview-8eed07800d95.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/130-0-27c15d651969.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Черный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Мрамор",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "131",
+    "name": "SW 50128 мрамор зеленый",
+    "model": "",
+    "code_1c": "01-00000149",
+    "price": 52500,
+    "stock": 10,
+    "category_id": "4",
+    "preview_image": "/uploads/products/131/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/131/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Зелёный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Мрамор",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "132",
+    "name": "SW 50133 мрамор серый",
+    "model": "",
+    "code_1c": "01-00000150",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/132/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/132/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Мрамор",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "133",
+    "name": "SW 50134 камень черный",
+    "model": "",
+    "code_1c": "01-00000151",
+    "price": 52500,
+    "stock": 2,
+    "category_id": "4",
+    "preview_image": "/uploads/products/133-preview-583dc7c24969.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/133-0-b87d6d2f854c.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Черный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Камень",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "134",
+    "name": "ZFZ 30264 ",
+    "model": "",
+    "code_1c": "01-00000152",
+    "price": 56700,
+    "stock": 153,
+    "category_id": "4",
+    "preview_image": "/uploads/products/134-preview-58b1959117f7.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/134-0-289164eafe1d.webp",
+      "/uploads/products/134-1-c150ea3ea1bc.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Тауп",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Soft-touch"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "135",
+    "name": "ZFZ 30273 ",
+    "model": "",
+    "code_1c": "01-00000153",
+    "price": 56700,
+    "stock": 48,
+    "category_id": "4",
+    "preview_image": "/uploads/products/135-preview-c70e105b06de.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/135-0-ec71ab5a0623.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Мятный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Soft-touch"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "136",
+    "name": "Водная гладь КРУПНАЯ серебро",
+    "model": "",
+    "code_1c": "01-00000154",
+    "price": 70875,
+    "stock": 19,
+    "category_id": "4",
+    "preview_image": "/uploads/products/136/0/400.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2025-09-15",
+        "units": 4
+      }
+    ],
+    "images": [
+      "/uploads/products/136/0/1200.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серебро",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Водная Гладь",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "137",
+    "name": "Водная гладь СРЕДНЯЯ Серебро",
+    "model": "",
+    "code_1c": "01-00000155",
+    "price": 70875,
+    "stock": 56,
+    "category_id": "4",
+    "preview_image": "/uploads/products/137-preview-12da5b1730fd.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/137-0-f202af34d503.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серебро",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Водная Гладь",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "138",
+    "name": "Водная гладь СРЕДНЯЯ черная",
+    "model": "",
+    "code_1c": "01-00000156",
+    "price": 70875,
+    "stock": 20,
+    "category_id": "4",
+    "preview_image": "/uploads/products/138-preview-10500e0545c9.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/138-0-187a4e0f63cf.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Черный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Водная Гладь",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "140",
+    "name": "Мозаика золото",
+    "model": "",
+    "code_1c": "01-00000158",
+    "price": 70875,
+    "stock": 92,
+    "category_id": "4",
+    "preview_image": "/uploads/products/140-preview-239fe5661d3c.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/140-0-029d6b18b7a8.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Золото",
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "141",
+    "name": "Мозаика серебро",
+    "model": "",
+    "code_1c": "01-00000159",
+    "price": 70875,
+    "stock": 31,
+    "category_id": "4",
+    "preview_image": "/uploads/products/141-preview-81612e689a38.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/141-0-b424a3179bbe.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серебро",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Мозаика",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "143",
+    "name": "Хрустальный кирпич - Синий",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/143/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/143/0/1200.webp",
+      "/uploads/products/143/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "144",
+    "name": "Горный утес (СКАЛА) 1200*3000",
+    "model": "",
+    "code_1c": "01-00000185",
+    "price": 157500,
+    "stock": 4,
+    "category_id": "19",
+    "preview_image": "/uploads/products/144-preview-0cfee079b471.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/144-0-a29fd5b71ffa.webp",
+      "/uploads/products/144-1-f4eedd4e1867.webp",
+      "/uploads/products/144-2-9652d90ed313.webp",
+      "/uploads/products/144-3-0662fb5b643f.webp",
+      "/uploads/products/144-4-983592ca7551.webp"
+    ],
+    "attrs": {
+      "Размер": "1220*3000*120",
+      "Размеры панели": "1220x3000*5мм"
+    },
+    "category_name": "Каменные Панели",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "145",
+    "name": "Гибкий камень мелкий дождь 670*2950",
+    "model": "",
+    "code_1c": "01-00000186",
+    "price": 73500,
+    "stock": 0,
+    "category_id": "17",
+    "preview_image": "/uploads/products/145-preview-d7da53c72318.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/145-0-566147a5f9b1.webp"
+    ],
+    "attrs": {
+      "Размер ": "670*2950*50",
+      "Структура": "Дождь"
+    },
+    "category_name": "Гибкий Камень",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "148",
+    "name": "АРТ цемент (черный) 600*1200*25",
+    "model": "",
+    "code_1c": "01-00000189",
+    "price": 78750,
+    "stock": 7,
+    "category_id": "18",
+    "preview_image": "/uploads/products/148-preview-b6a5ca964bbc.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/148-0-4e9e828fac42.webp"
+    ],
+    "attrs": {
+      "colour": "Черный",
+      "Размер": "600*1200*25"
+    },
+    "category_name": "Арт Цемент",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "149",
+    "name": "5504 Заглушка Бронза 295",
+    "model": "",
+    "code_1c": "01-00000192",
+    "price": 3700,
+    "stock": 0,
+    "category_id": "6",
+    "preview_image": "/uploads/products/149-preview-b8bc4529eb0c.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/149-0-207bc8fe92f6.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Матовое золото"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "150",
+    "name": "5519 Внешний угол Черный",
+    "model": "",
+    "code_1c": "01-00000193",
+    "price": 5300,
+    "stock": 3297,
+    "category_id": "6",
+    "preview_image": "/uploads/products/150-preview-67d0f8b115ec.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-30",
+        "units": 500
+      }
+    ],
+    "images": [
+      "/uploads/products/150-0-cbadb0e51b29.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "151",
+    "name": "5519 Внешний угол Бронза",
+    "model": "",
+    "code_1c": "01-00000194",
+    "price": 5300,
+    "stock": 3040,
+    "category_id": "6",
+    "preview_image": "/uploads/products/151-preview-491e9faef8d2.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/151-0-bbdc44eb8212.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Бронза"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "152",
+    "name": "MW86101  дерево",
+    "model": "",
+    "code_1c": "01-00000239",
+    "price": 52500,
+    "stock": 9,
+    "category_id": "4",
+    "preview_image": "/uploads/products/152/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/152/0/1200.webp",
+      "/uploads/products/152-1-7cec96db2f8e.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Сонома",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "170",
+    "name": "Хрустальный кирпич - Черный",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/170/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/170/0/1200.webp",
+      "/uploads/products/170/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "171",
+    "name": "Хрустальный кирпич - Коричневый",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/171/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/171/0/1200.webp",
+      "/uploads/products/171/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "172",
+    "name": "Хрустальный кирпич - Изумруд",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/172/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/172/0/1200.webp",
+      "/uploads/products/172/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "173",
+    "name": "Хрустальный кирпич - Зеленый",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/173/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/173/0/1200.webp",
+      "/uploads/products/173/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "174",
+    "name": "Хрустальный кирпич - Светло-Синий",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/174/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/174/0/1200.webp",
+      "/uploads/products/174/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "175",
+    "name": "Хрустальный кирпич - Оранжевый",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/175/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/175/0/1200.webp",
+      "/uploads/products/175/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "176",
+    "name": "Хрустальный кирпич - Розовый",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/176/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/176/0/1200.webp",
+      "/uploads/products/176/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "177",
+    "name": "Хрустальный кирпич - Фиолетовый",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/177/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/177/0/1200.webp",
+      "/uploads/products/177/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "178",
+    "name": "Хрустальный кирпич - Красный",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/178/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/178/0/1200.webp",
+      "/uploads/products/178/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "179",
+    "name": "Хрустальный кирпич - Желтый",
+    "model": "",
+    "code_1c": "",
+    "price": 4410,
+    "stock": 0,
+    "category_id": "8",
+    "preview_image": "/uploads/products/179/0/400.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/179/0/1200.webp",
+      "/uploads/products/179/1/1200.webp"
+    ],
+    "attrs": {},
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "182",
+    "name": "HD-10-10 таневая",
+    "model": "",
+    "code_1c": "01-00000218",
+    "price": 67200,
+    "stock": 159,
+    "category_id": "4",
+    "preview_image": "/uploads/products/182-preview-0a6dbc6f1806.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/182-0-bf01535bb6a6.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "183",
+    "name": "BW 61015 ткань",
+    "model": "",
+    "code_1c": "01-00000252",
+    "price": 61950,
+    "stock": 200,
+    "category_id": "4",
+    "preview_image": "/uploads/products/183-preview-695be657f991.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/183-0-0b7f6a1ec0f9.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Ткань",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "184",
+    "name": "FG 76030 матовый",
+    "model": "",
+    "code_1c": "01-00000240",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/184-preview-9d2f82c0ad8d.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/184-0-638d00aafdb2.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "185",
+    "name": "FG 76035 матовый",
+    "model": "",
+    "code_1c": "01-00000220",
+    "price": 59850,
+    "stock": 16,
+    "category_id": "4",
+    "preview_image": "/uploads/products/185-preview-c0f2258c9e0b.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/185-0-2e68d1d5cc4f.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "186",
+    "name": "GM 4023 - MW 86217 дерево",
+    "model": "",
+    "code_1c": "01-00000221",
+    "price": 52500,
+    "stock": 61,
+    "category_id": "4",
+    "preview_image": "/uploads/products/186-preview-33339b198a99.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/186-0-03bbbcfae296.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "187",
+    "name": " GM 4028 дерево",
+    "model": "",
+    "code_1c": "01-00000195",
+    "price": 52500,
+    "stock": 360,
+    "category_id": "4",
+    "preview_image": "/uploads/products/187-preview-d2db86a9c2f9.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-03-24",
+        "units": 25
+      }
+    ],
+    "images": [
+      "/uploads/products/187-0-b8ee7b320411.webp",
+      "/uploads/products/187-1-a9117e994cbb.webp",
+      "/uploads/products/187-2-d4f5fb6010e7.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "188",
+    "name": "Водная гладь СРЕДНЯЯ золото",
+    "model": "",
+    "code_1c": "01-00000244",
+    "price": 70875,
+    "stock": 56,
+    "category_id": "4",
+    "preview_image": "/uploads/products/188-preview-8cb4c149054b.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/188-0-5fd82e8a5780.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Золото",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Водная Гладь",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "189",
+    "name": "Водная гладь КРУПНАЯ",
+    "model": "",
+    "code_1c": "01-00000229",
+    "price": 70875,
+    "stock": 58,
+    "category_id": "4",
+    "preview_image": "/uploads/products/189-preview-b47a2158ac35.webp",
+    "description": null,
+    "incoming_stock": [
+      {
+        "date": "2025-09-15",
+        "units": 10
+      }
+    ],
+    "images": [
+      "/uploads/products/189-0-2469fc8b35ef.webp",
+      "/uploads/products/189-1-1ce2fa51cc97.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Золото",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Водная Гладь",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "190",
+    "name": "Гибкий камень 2440*1200",
+    "model": "",
+    "code_1c": "01-00000227",
+    "price": 73500,
+    "stock": 0,
+    "category_id": "17",
+    "preview_image": "/uploads/products/190-preview-6524ed573b03.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/190-0-797cc0bcb280.webp",
+      "/uploads/products/190-1-6fb8e34a5402.webp"
+    ],
+    "attrs": {
+      "Размер ": "1220*2440*30",
+      "Структура": "Травертин"
+    },
+    "category_name": "Гибкий Камень",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "191",
+    "name": "Хрустальный кирпич 2кг",
+    "model": "",
+    "code_1c": "01-00000184",
+    "price": 4410,
+    "stock": 53,
+    "category_id": "8",
+    "preview_image": "/uploads/products/191-preview-cde1de92eca5.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/191-0-387c6f47569e.webp"
+    ],
+    "attrs": {
+      "Размер": "200х100х50"
+    },
+    "category_name": "Стеклоблок",
+    "category_slug": "stekloblok",
+    "section_slug": "ntbricks"
+  },
+  {
+    "id": "193",
+    "name": "5502  Угол внутренний Серебро",
+    "model": "",
+    "code_1c": "01-00000205",
+    "price": 5300,
+    "stock": 410,
+    "category_id": "6",
+    "preview_image": "/uploads/products/193-preview-5caf5c90a0f7.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/193-0-8b36a1a30a38.webp",
+      "/uploads/products/193-1-76df5ad139ce.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Серебро"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "194",
+    "name": "5502  Угол внутренний Матовое Золото",
+    "model": "",
+    "code_1c": "01-00000206",
+    "price": 5300,
+    "stock": 294,
+    "category_id": "6",
+    "preview_image": "/uploads/products/194-preview-46006b4aa8e3.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/194-0-82e935261c1d.webp",
+      "/uploads/products/194-1-37f8fd7261f8.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Матовое золото"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "195",
+    "name": "5503 соеденитель без щели Т Матовое Золото",
+    "model": "",
+    "code_1c": "01-00000211",
+    "price": 3700,
+    "stock": 331,
+    "category_id": "6",
+    "preview_image": "/uploads/products/195-preview-1174f36f44cf.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/195-0-889e4ae2acc5.webp",
+      "/uploads/products/195-1-6b83d4674bcc.webp",
+      "/uploads/products/195-2-002a0e97d8e9.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Матовое золото"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "196",
+    "name": "5503 соединитель без щели Т Серебро",
+    "model": "",
+    "code_1c": "01-00000212",
+    "price": 3700,
+    "stock": 409,
+    "category_id": "6",
+    "preview_image": "/uploads/products/196-preview-c5842bda2f0a.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/196-0-98468b48fba9.webp",
+      "/uploads/products/196-1-de54b53edb6f.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Серебро"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "197",
+    "name": "5504 Заглушка Серебро",
+    "model": "",
+    "code_1c": "01-00000215",
+    "price": 3700,
+    "stock": 89,
+    "category_id": "6",
+    "preview_image": "/uploads/products/197-preview-7acc374885ec.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/197-0-9766a8b32fd4.webp",
+      "/uploads/products/197-1-3543c7b22e02.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Серебро"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "199",
+    "name": "5505 Соед с щелью П Матовое Золото",
+    "model": "",
+    "code_1c": "01-00000214",
+    "price": 4200,
+    "stock": 541,
+    "category_id": "6",
+    "preview_image": "/uploads/products/199-preview-35620ffb33ce.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/199-0-096f6f2feced.webp",
+      "/uploads/products/199-1-03a0ce44c770.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Матовое золото"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "200",
+    "name": "5506 плинтус Серебро",
+    "model": "",
+    "code_1c": "01-00000204",
+    "price": 8400,
+    "stock": 174,
+    "category_id": "6",
+    "preview_image": "/uploads/products/200-preview-ee15c34f60f8.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/200-0-4ce8a579aaaf.webp",
+      "/uploads/products/200-1-de11935079a5.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Серебро"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "201",
+    "name": "5512 Матовое Золото Соед подсветка 4мм П",
+    "model": "",
+    "code_1c": "01-00000207",
+    "price": 5300,
+    "stock": 111,
+    "category_id": "6",
+    "preview_image": "/uploads/products/201-preview-cc1ea6f72b2b.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/201-0-6f33c89b6470.webp",
+      "/uploads/products/201-1-e54de106ca47.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Матовое золото"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "202",
+    "name": "5512 Серебро Соед подсветка 4мм П",
+    "model": "",
+    "code_1c": "01-00000208",
+    "price": 5300,
+    "stock": 184,
+    "category_id": "6",
+    "preview_image": "/uploads/products/202-preview-cb40b84d0b6f.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/202-0-7892e2c9925f.webp",
+      "/uploads/products/202-1-2d4c65bb3d23.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Серебро"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "203",
+    "name": "5519 Внешний угол Матовое золото",
+    "model": "",
+    "code_1c": "01-00000198",
+    "price": 5300,
+    "stock": 414,
+    "category_id": "6",
+    "preview_image": "/uploads/products/203-preview-6debc8b3c975.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/203-0-64594e4cc33b.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Матовое золото"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "204",
+    "name": "5519 Внешний угол Серебро",
+    "model": "",
+    "code_1c": "01-00000201",
+    "price": 5300,
+    "stock": 119,
+    "category_id": "6",
+    "preview_image": "/uploads/products/204-preview-74558b28d1db.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/204-0-4eb8995d641c.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Серебро"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "223",
+    "name": "Е 06 соед профиль Матовое золото",
+    "model": "",
+    "code_1c": "01-00000197",
+    "price": 3200,
+    "stock": 454,
+    "category_id": "6",
+    "preview_image": "/uploads/products/223-preview-d752f1051424.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/223-0-809fe942f4ad.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Матовое золото"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "224",
+    "name": "Е 06 соед профиль Серебро",
+    "model": "",
+    "code_1c": "01-00000200",
+    "price": 3200,
+    "stock": 491,
+    "category_id": "6",
+    "preview_image": "/uploads/products/224-preview-b6ccd777ba69.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/224-0-b3699bbf6e9c.webp"
+    ],
+    "attrs": {
+      "Цвет профиля": "Серебро"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "225",
+    "name": "Профиль 5531 Гнущийся Серебро",
+    "model": "",
+    "code_1c": "01-00000210",
+    "price": 7400,
+    "stock": 72,
+    "category_id": "6",
+    "preview_image": null,
+    "description": null,
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Цвет профиля": "Серебро"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "226",
+    "name": "ЛК GM 4014 Лувер конструктор",
+    "model": "",
+    "code_1c": "01-00000250",
+    "price": 7900,
+    "stock": 44,
+    "category_id": "5",
+    "preview_image": "/uploads/products/226-preview-f7ed4546eb2c.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/226-0-e42e11bcbdf3.webp",
+      "/uploads/products/226-1-b792e61a41cd.webp"
+    ],
+    "attrs": {
+      "Цвет": "Венге",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "60х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "227",
+    "name": "Лувер BG 90072  Внутреняя ВОЛНА",
+    "model": "",
+    "code_1c": "01-00000216",
+    "price": 14400,
+    "stock": 37,
+    "category_id": "5",
+    "preview_image": "/uploads/products/227-preview-1335af8a2973.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/227-0-18b465ec16e9.webp",
+      "/uploads/products/227-1-6a7efcd11135.webp",
+      "/uploads/products/227-2-f953514d3e01.webp"
+    ],
+    "attrs": {
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "230",
+    "name": "Лувер FG 76012 с блест Внутренняя ВОЛНА",
+    "model": "",
+    "code_1c": "01-00000219",
+    "price": 14400,
+    "stock": 96,
+    "category_id": "5",
+    "preview_image": "/uploads/products/230-preview-b28532e01dc6.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/230-0-9eef08e55057.webp"
+    ],
+    "attrs": {
+      "Цвет": "Бежевый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Матовый",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "232",
+    "name": "Лувер FG76017 Внутренняя ВОЛНА",
+    "model": "",
+    "code_1c": "01-00000224",
+    "price": 14400,
+    "stock": 38,
+    "category_id": "5",
+    "preview_image": "/uploads/products/232-preview-ae7ca7e141ff.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/232-0-3486988ffe5d.webp"
+    ],
+    "attrs": {
+      "Цвет": "Айвори бежевый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Матовый",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "233",
+    "name": "Лувер GM 4046 Внутренняя ВОЛНА",
+    "model": "",
+    "code_1c": "01-00000272",
+    "price": 14400,
+    "stock": 72,
+    "category_id": "5",
+    "preview_image": "/uploads/products/233-preview-ce49913b069b.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/233-0-1881f9fcaf8f.webp",
+      "/uploads/products/233-1-7a1354f04976.webp"
+    ],
+    "attrs": {
+      "Цвет": "Венге",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "234",
+    "name": "Лувер GM 6005  Внутреняя ВОЛНА",
+    "model": "Лувер GM 6005",
+    "code_1c": "01-00000225",
+    "price": 14400,
+    "stock": 80,
+    "category_id": "5",
+    "preview_image": null,
+    "description": "",
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Матовый",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "235",
+    "name": "Лувер MW 86233 Внутренняя ВОЛНА",
+    "model": "",
+    "code_1c": "01-00000223",
+    "price": 14400,
+    "stock": 83,
+    "category_id": "5",
+    "preview_image": "/uploads/products/235-preview-28917fd08411.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/235-0-bf6d14662a8d.webp",
+      "/uploads/products/235-1-598cbb5a435a.webp",
+      "/uploads/products/235-2-f78851819c1d.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "236",
+    "name": "Лувер GM 4044 Внутренняя ВОЛНА",
+    "model": "",
+    "code_1c": "01-00000275",
+    "price": 14400,
+    "stock": 6,
+    "category_id": "5",
+    "preview_image": "/uploads/products/236-preview-0cfed91a8bab.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/236-0-63c66dfd1ab1.webp",
+      "/uploads/products/236-1-05d69be73d36.webp",
+      "/uploads/products/236-2-8f9f745eab09.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "237",
+    "name": "Зеркало Натуральное 1220*3000",
+    "model": "",
+    "code_1c": "01-00000271",
+    "price": 107625,
+    "stock": 73,
+    "category_id": "4",
+    "preview_image": "/uploads/products/237-preview-3edc3cf4ab98.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/237-0-6213719e5b84.webp",
+      "/uploads/products/237-1-8948f84b1d5a.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Зеркало",
+      "Размеры панели": "1220x3000*5мм"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "238",
+    "name": "Лувер GM 4046 2,8м",
+    "model": "",
+    "code_1c": "01-00000292",
+    "price": 14400,
+    "stock": 38,
+    "category_id": "5",
+    "preview_image": "/uploads/products/238-preview-e8de7b2e7201.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/238-0-76c11723cbc9.webp",
+      "/uploads/products/238-1-c3861cbc9551.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Квадрат",
+      "Фактура": "Шпон",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "239",
+    "name": " GM 4026 дерево  елка серая",
+    "model": "",
+    "code_1c": "01-00000323",
+    "price": 52500,
+    "stock": 4,
+    "category_id": "4",
+    "preview_image": null,
+    "description": "",
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Цвет": "Серый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Матовый",
+      "Размер (мм)": "140х3000",
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Дерево",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "240",
+    "name": "GM 7014 мелкая рябь серебро 2,8м",
+    "model": "",
+    "code_1c": "01-00000168",
+    "price": 61740,
+    "stock": 15,
+    "category_id": "4",
+    "preview_image": "/uploads/products/240-preview-ad0ec6588a9e.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/240-0-37ae8399c300.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Серебро",
+      "Размеры панели": "1220х2800*5мм",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "241",
+    "name": "HD 2011 Матовый светло-серый",
+    "model": "",
+    "code_1c": "01-00000288",
+    "price": 56700,
+    "stock": 18,
+    "category_id": "4",
+    "preview_image": null,
+    "description": null,
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Цвет панели": "Серый",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "242",
+    "name": "HD-7563-01 дерево",
+    "model": "",
+    "code_1c": "01-00000217",
+    "price": 67200,
+    "stock": 2,
+    "category_id": "4",
+    "preview_image": null,
+    "description": "",
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Цвет панели": "Натуральный",
+      "Размеры панели": "1220x3000*5мм",
+      "Фактура панели": "Шпон",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "243",
+    "name": "SW 50105 камень",
+    "model": "",
+    "code_1c": "01-00000294",
+    "price": 45780,
+    "stock": 3,
+    "category_id": "4",
+    "preview_image": "/uploads/products/243-preview-90fa0e6dfa1c.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/243-0-b26321093319.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Камень",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "244",
+    "name": "NT Blok 2600*1200*10",
+    "model": "NT Blok 100",
+    "code_1c": "01-00000299",
+    "price": 27500,
+    "stock": 991,
+    "category_id": "14",
+    "preview_image": "/uploads/products/244-preview-5abf3f858adc.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-10",
+        "units": 150
+      }
+    ],
+    "images": [
+      "/uploads/products/244-0-91f609a563a1.webp"
+    ],
+    "attrs": {},
+    "category_name": "Плита",
+    "category_slug": null,
+    "section_slug": "ntblok"
+  },
+  {
+    "id": "245",
+    "name": "NT Blok 2600*1200*20",
+    "model": "NT Blok 200",
+    "code_1c": "01-00000300",
+    "price": 33000,
+    "stock": 653,
+    "category_id": "14",
+    "preview_image": "/uploads/products/245-preview-c325a86b6cff.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-10",
+        "units": 485
+      }
+    ],
+    "images": [
+      "/uploads/products/245-0-87be594473da.webp"
+    ],
+    "attrs": {},
+    "category_name": "Плита",
+    "category_slug": null,
+    "section_slug": "ntblok"
+  },
+  {
+    "id": "246",
+    "name": "Шайба из нержавеющей стали",
+    "model": "Шайба",
+    "code_1c": "01-00000298",
+    "price": 100,
+    "stock": 44928,
+    "category_id": "13",
+    "preview_image": "/uploads/products/246-preview-67bd237216dc.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/246-0-33269d4d2e4b.webp"
+    ],
+    "attrs": {},
+    "category_name": "NT Blok",
+    "category_slug": "ntblok",
+    "section_slug": "ntblok"
+  },
+  {
+    "id": "247",
+    "name": "Гибкий камень 580*2700 мягкий квадрат",
+    "model": "NT Bricks",
+    "code_1c": "01-00000273",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "17",
+    "preview_image": "/uploads/products/247-preview-96d082a63d0d.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/247-0-a65032748782.webp",
+      "/uploads/products/247-1-86b7d287f8fb.webp"
+    ],
+    "attrs": {
+      "Размер ": "580*2700*50",
+      "Структура": "Мягкий квадрат"
+    },
+    "category_name": "Гибкий Камень",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "248",
+    "name": "Гибкий камень 600 * 2700 мелкая волна",
+    "model": "NT Bricks",
+    "code_1c": "01-00000274",
+    "price": 52500,
+    "stock": 0,
+    "category_id": "17",
+    "preview_image": "/uploads/products/248-preview-5961c11ee0c6.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/248-0-3bda4fd6eeb1.webp",
+      "/uploads/products/248-1-c814b22d3281.webp",
+      "/uploads/products/248-2-36dfc0645574.webp"
+    ],
+    "attrs": {
+      "Размер ": "600*2700*50",
+      "Структура": "Мелкая  Волна"
+    },
+    "category_name": "Гибкий Камень",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "249",
+    "name": "Клей Кристал для кирпичей",
+    "model": "Клей Кристал для кирпичей",
+    "code_1c": "01-00000243",
+    "price": 3255,
+    "stock": 27,
+    "category_id": "7",
+    "preview_image": "/uploads/products/249-preview-b05081401e5c.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-10",
+        "units": 1
+      }
+    ],
+    "images": [
+      "/uploads/products/249-0-5c5df5299e9b.webp"
+    ],
+    "attrs": {},
+    "category_name": "Материалы крепления",
+    "category_slug": "materiali-kreplenia",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "250",
+    "name": "ФиксАлл Flexi белый 290мл тюбик для профилей",
+    "model": "ФиксАлл Flexi",
+    "code_1c": "01-00000302",
+    "price": 3255,
+    "stock": 0,
+    "category_id": "7",
+    "preview_image": "/uploads/products/250-preview-330a4bfc8f43.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/250-0-9413dcda9730.webp"
+    ],
+    "attrs": {},
+    "category_name": "Материалы крепления",
+    "category_slug": "materiali-kreplenia",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "251",
+    "name": "Лувер BW 61004 Внутреняя ВОЛНА",
+    "model": "Лувер BW 61004 ",
+    "code_1c": "01-00000222",
+    "price": 14400,
+    "stock": 120,
+    "category_id": "5",
+    "preview_image": "/uploads/products/251-preview-de711ba6ea4f.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/251-0-b91873d33c53.webp"
+    ],
+    "attrs": {
+      "Цвет": "Серый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "252",
+    "name": "Лувер GM 4044 Квадрат",
+    "model": "Лувер GM 4044 ",
+    "code_1c": "01-00000301",
+    "price": 14400,
+    "stock": 0,
+    "category_id": "5",
+    "preview_image": "/uploads/products/252-preview-4e7d3b58e556.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/252-0-7d5e04f3e86f.webp",
+      "/uploads/products/252-1-a4af02407d5d.webp",
+      "/uploads/products/252-2-98b85186601f.webp"
+    ],
+    "attrs": {
+      "Форма": "Квадрат",
+      "Фактура": "Шпон",
+      "Размер (мм)": "150x3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "254",
+    "name": "Лувер HD 2011  Внутреняя Волна",
+    "model": "Лувер HD 2011",
+    "code_1c": "01-00000289",
+    "price": 14400,
+    "stock": 97,
+    "category_id": "5",
+    "preview_image": "/uploads/products/254-preview-1375c8646e14.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/254-0-99acdc6190d4.webp",
+      "/uploads/products/254-1-1ecd3df34f74.webp"
+    ],
+    "attrs": {
+      "Цвет": "Серый",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Матовый",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "257",
+    "name": "GM 6006 Матовый",
+    "model": "GM 6006 Матовый",
+    "code_1c": "01-00000228",
+    "price": 52500,
+    "stock": 53,
+    "category_id": "4",
+    "preview_image": null,
+    "description": null,
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "259",
+    "name": "5501 Наружный угол Черный Х образный",
+    "model": "5501 Наружный угол ",
+    "code_1c": "01-00000280",
+    "price": 5300,
+    "stock": 0,
+    "category_id": "6",
+    "preview_image": "/uploads/products/259-preview-548590e37dd5.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/259-0-31af87967138.webp"
+    ],
+    "attrs": {
+      "Размер": "10*10*3000",
+      "Цвет профиля": "Черный"
+    },
+    "category_name": "Алюминиевые профили",
+    "category_slug": "alluminium-profiles",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "260",
+    "name": "Лувер GM 4045 квадрат 2.8м ",
+    "model": "",
+    "code_1c": "01-00000287",
+    "price": 14400,
+    "stock": 2,
+    "category_id": "5",
+    "preview_image": null,
+    "description": "",
+    "incoming_stock": [],
+    "images": [],
+    "attrs": {
+      "Форма": "Квадрат",
+      "Фактура": "Шпон",
+      "Размер (мм)": "140*2800"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "261",
+    "name": "NT Blok 2600*1200*30",
+    "model": "NT Blok 300",
+    "code_1c": "01-00000334",
+    "price": 44000,
+    "stock": 93,
+    "category_id": "14",
+    "preview_image": "/uploads/products/261-preview-218f33485ffe.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-10",
+        "units": 200
+      }
+    ],
+    "images": [
+      "/uploads/products/261-0-b78e9414a1f9.webp",
+      "/uploads/products/261-1-f6fdbbca4851.webp"
+    ],
+    "attrs": {},
+    "category_name": "Плита",
+    "category_slug": null,
+    "section_slug": "ntblok"
+  },
+  {
+    "id": "262",
+    "name": "NT Blok 2600*1200*50",
+    "model": "NT Blok 500",
+    "code_1c": "01-00000335",
+    "price": 55000,
+    "stock": 83,
+    "category_id": "14",
+    "preview_image": "/uploads/products/262-preview-a86c5232200e.webp",
+    "description": "",
+    "incoming_stock": [
+      {
+        "date": "2026-04-10",
+        "units": 100
+      }
+    ],
+    "images": [
+      "/uploads/products/262-0-321de7af2440.webp",
+      "/uploads/products/262-1-4e6aa835e573.webp"
+    ],
+    "attrs": {},
+    "category_name": "Плита",
+    "category_slug": null,
+    "section_slug": "ntblok"
+  },
+  {
+    "id": "263",
+    "name": "NT Blok Поддон 1200*900*50",
+    "model": "NT Blok Поддон 1200*900*50",
+    "code_1c": "01-00000336",
+    "price": 85000,
+    "stock": 18,
+    "category_id": "15",
+    "preview_image": "/uploads/products/263-preview-1146337df3f7.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/263-0-b0cd0b343c75.webp",
+      "/uploads/products/263-1-b2e3d56c088e.webp",
+      "/uploads/products/263-2-04c243bc911d.webp",
+      "/uploads/products/263-3-c67aad347197.webp"
+    ],
+    "attrs": {},
+    "category_name": "Поддон",
+    "category_slug": null,
+    "section_slug": "ntblok"
+  },
+  {
+    "id": "264",
+    "name": "NT Blok Поддон 900*900*50",
+    "model": "NT Blok Поддон 900*900*50",
+    "code_1c": "01-00000337",
+    "price": 65000,
+    "stock": 21,
+    "category_id": "15",
+    "preview_image": "/uploads/products/264-preview-2fc4f339f741.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/264-0-18ad8d12f160.webp",
+      "/uploads/products/264-1-bbca41863e4f.webp",
+      "/uploads/products/264-2-e3d5670f31a9.webp"
+    ],
+    "attrs": {},
+    "category_name": "Поддон",
+    "category_slug": null,
+    "section_slug": "ntblok"
+  },
+  {
+    "id": "265",
+    "name": "Гибкий камень RS084 1200*3000",
+    "model": "Гибкий камень RS084",
+    "code_1c": "01-00000325",
+    "price": 94500,
+    "stock": 16,
+    "category_id": "17",
+    "preview_image": "/uploads/products/265-preview-8a8d045467d5.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/265-0-5a14d8029750.webp",
+      "/uploads/products/265-1-b1a289bbf7ec.webp"
+    ],
+    "attrs": {
+      "Размер ": "1200*3000*120",
+      "Структура": "Натуральная Рельефная"
+    },
+    "category_name": "Гибкий Камень",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "266",
+    "name": "Гибкий камень RS085 Shokolad 1200*3000",
+    "model": "Гибкий камень RS085 Shokolad",
+    "code_1c": "01-00000326",
+    "price": 99750,
+    "stock": 30,
+    "category_id": "17",
+    "preview_image": "/uploads/products/266-preview-a82920b34dec.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/266-0-9444c927baf4.webp",
+      "/uploads/products/266-1-9af59745d665.webp"
+    ],
+    "attrs": {
+      "Размер ": "1200*3000*120",
+      "Структура": "Шоколад Фактурная"
+    },
+    "category_name": "Гибкий Камень",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "267",
+    "name": "Горный утес 1150*3000",
+    "model": "Горный утес ",
+    "code_1c": "01-00000324",
+    "price": 131250,
+    "stock": 19,
+    "category_id": "19",
+    "preview_image": "/uploads/products/267-preview-cd5795d11a43.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/267-0-fc8263319995.webp",
+      "/uploads/products/267-1-fa2096e3394c.webp"
+    ],
+    "attrs": {
+      "Размер": "1150*3000*60"
+    },
+    "category_name": "Каменные Панели",
+    "category_slug": null,
+    "section_slug": "ntstone"
+  },
+  {
+    "id": "269",
+    "name": "FG 76030 -6002 матовый 2,8м",
+    "model": "FG 76030 -6002 матовый",
+    "code_1c": "01-00000232",
+    "price": 45780,
+    "stock": 1,
+    "category_id": "4",
+    "preview_image": "/uploads/products/269-preview-e3ed972e059f.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/269-0-fa5b694895e2.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "270",
+    "name": "GM 2002 МРАМОР белый 2,8",
+    "model": "GM 2002 МРАМОР ",
+    "code_1c": "01-00000246",
+    "price": 45780,
+    "stock": 1,
+    "category_id": "4",
+    "preview_image": "/uploads/products/270-preview-8dbff3db6c98.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/270-0-5344ef2fa231.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Мрамор",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "272",
+    "name": "GM 4010 - MW 86307 дерево 2,8м ",
+    "model": "GM 4010 - MW 86307 дерево ",
+    "code_1c": "01-00000177",
+    "price": 45780,
+    "stock": 0,
+    "category_id": "4",
+    "preview_image": "/uploads/products/272-preview-fdb54c475509.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/272-0-8ddf0a39a375.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Шпон"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "273",
+    "name": "GM 4015- MW 86313 дерево 2,8м ",
+    "model": "GM 4015- MW 86313 ",
+    "code_1c": "01-00000176",
+    "price": 45780,
+    "stock": 22,
+    "category_id": "4",
+    "preview_image": "/uploads/products/273-preview-b4291c6ff491.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/273-0-ec01fe741964.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Шпон"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "274",
+    "name": "GM 4023 - MW 86217 дерево 2,8м",
+    "model": "GM 4023 - MW 86217 ",
+    "code_1c": "01-00000247",
+    "price": 45780,
+    "stock": 5,
+    "category_id": "4",
+    "preview_image": "/uploads/products/274-preview-3e74d218c122.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/274-0-2386d27405ce.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Шпон"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "275",
+    "name": "GM 5017 бронза ткань 2,8м ",
+    "model": "GM 5017 бронза ткань ",
+    "code_1c": "01-00000172",
+    "price": 55650,
+    "stock": 1,
+    "category_id": "4",
+    "preview_image": "/uploads/products/275-preview-cd9f5d11ed18.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/275-0-353d16a93ef4.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Ткань"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "276",
+    "name": "GM 7004 бел Глянец 2,8м",
+    "model": "GM 7004 бел Глянец ",
+    "code_1c": "01-00000171",
+    "price": 61740,
+    "stock": 1,
+    "category_id": "4",
+    "preview_image": "/uploads/products/276-preview-fbab6aa9adce.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/276-0-f11c788b53e6.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Глянцевая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "277",
+    "name": "GM 7005 Зеркало 2,8м Ненастоящий",
+    "model": "GM 7005 Зеркало ",
+    "code_1c": "01-00000248",
+    "price": 61740,
+    "stock": 17,
+    "category_id": "4",
+    "preview_image": "/uploads/products/277-preview-cd6dad4eea61.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/277-0-3fa2bc2694b2.webp",
+      "/uploads/products/277-1-5c74ad8ec0aa.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "278",
+    "name": "GM 7013 - мелкая рябь золото 2,8м ",
+    "model": "GM 7013 ",
+    "code_1c": "01-00000169",
+    "price": 61740,
+    "stock": 11,
+    "category_id": "4",
+    "preview_image": "/uploads/products/278-preview-9b9cbaee8bb5.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/278-0-1836146cca07.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Золото",
+      "Размеры панели": "1220х2800*5мм",
+      "Поверхность панели": "Фактурная"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "279",
+    "name": "MW 86122 дерево 2,8м ",
+    "model": "MW 86122",
+    "code_1c": "01-00000167",
+    "price": 45780,
+    "stock": 2,
+    "category_id": "4",
+    "preview_image": "/uploads/products/279-preview-28ccc26807c8.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/279-0-7d899d60e579.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Дерево"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "280",
+    "name": "MW 86226 дерево 2,8м ",
+    "model": "MW 86226 ",
+    "code_1c": "01-00000166",
+    "price": 45780,
+    "stock": 1,
+    "category_id": "4",
+    "preview_image": "/uploads/products/280-preview-fc4d54c078cb.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/280-0-c1b2273dda18.webp",
+      "/uploads/products/280-1-f631516d7a10.webp",
+      "/uploads/products/280-2-234b04af21f4.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Шпон"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "281",
+    "name": "MW 86312 - GM 4014 дерево 2,8м",
+    "model": "MW 86312 - GM 4014",
+    "code_1c": "01-00000235",
+    "price": 45780,
+    "stock": 1,
+    "category_id": "4",
+    "preview_image": "/uploads/products/281-preview-ea46d9c516a3.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/281-0-13a4b69c0523.webp",
+      "/uploads/products/281-1-15f71009c347.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Шпон"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "282",
+    "name": "MW 86321 дерево 2,8м ",
+    "model": "MW 86321",
+    "code_1c": "01-00000165",
+    "price": 45780,
+    "stock": 3,
+    "category_id": "4",
+    "preview_image": "/uploads/products/282-preview-15c6121beb81.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/282-0-0f9c434f0d52.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Шпон"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "283",
+    "name": "SW 50105 камень 2,8",
+    "model": "SW 50105",
+    "code_1c": "01-00000294",
+    "price": 45780,
+    "stock": 3,
+    "category_id": "4",
+    "preview_image": "/uploads/products/283-preview-8fc51b2e6afb.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/283-0-ef60cf116306.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Камень",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "284",
+    "name": "SW 50106 камень 2,8м ",
+    "model": "SW 50106 ",
+    "code_1c": "01-00000164",
+    "price": 45780,
+    "stock": 15,
+    "category_id": "4",
+    "preview_image": "/uploads/products/284-preview-5a13bef5bba7.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/284-0-446835f8dbc9.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "1220х2800*5мм",
+      "Фактура панели": "Камень"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "285",
+    "name": "Лувер 76017 как у веласс",
+    "model": "Лувер 76017 ",
+    "code_1c": "01-00000290",
+    "price": 14400,
+    "stock": 43,
+    "category_id": "5",
+    "preview_image": "/uploads/products/285-preview-66074c517141.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/285-0-b90c50c99897.webp",
+      "/uploads/products/285-1-67d28653cc36.webp"
+    ],
+    "attrs": {
+      "Цвет": "Бежевый",
+      "Форма": "Мелкая Волна",
+      "Фактура": "Матовый",
+      "Размер (мм)": "150x3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "288",
+    "name": "Лувер BW 61005 - 3014 Внутреняя ВОЛНА",
+    "model": "Лувер BW 61005 - 3014",
+    "code_1c": "01-00000307",
+    "price": 14400,
+    "stock": 42,
+    "category_id": "5",
+    "preview_image": "/uploads/products/288-preview-0de011d805cc.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/288-0-3a8123cef29d.webp"
+    ],
+    "attrs": {
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Ткань",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "289",
+    "name": "Лувер GM 4028 Большой Квадрат",
+    "model": "Лувер GM 4028 ",
+    "code_1c": "01-00000327",
+    "price": 14400,
+    "stock": 71,
+    "category_id": "5",
+    "preview_image": "/uploads/products/289-preview-a347ed003876.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/289-0-8eeaf2f95e16.webp",
+      "/uploads/products/289-1-06963d20a879.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Квадрат",
+      "Фактура": "Шпон",
+      "Размер (мм)": "150x3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "290",
+    "name": "Лувер HD-7563-01 Внутреняя волна",
+    "model": "Лувер HD-7563-01 ",
+    "code_1c": "01-00000309",
+    "price": 14400,
+    "stock": 41,
+    "category_id": "5",
+    "preview_image": "/uploads/products/290-preview-6a31ce3ac7a0.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/290-0-6ff394272332.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Внутренняя Волна",
+      "Фактура": "Шпон",
+      "Размер (мм)": "140х3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "291",
+    "name": "Лувер MW 86106  Квадрат Крупный",
+    "model": "Лувер MW 86106  ",
+    "code_1c": "01-00000328",
+    "price": 14400,
+    "stock": 66,
+    "category_id": "5",
+    "preview_image": "/uploads/products/291-preview-cdbfab413b17.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/291-0-4874a799f608.webp",
+      "/uploads/products/291-1-4dbd1f76d1f2.webp"
+    ],
+    "attrs": {
+      "Цвет": "Натуральный",
+      "Форма": "Квадрат",
+      "Фактура": "Шпон",
+      "Размер (мм)": "150x3000"
+    },
+    "category_name": "Луверы",
+    "category_slug": "luvers",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "292",
+    "name": "FG 76025 ",
+    "model": "",
+    "code_1c": "01-00000310",
+    "price": 52500,
+    "stock": 85,
+    "category_id": "4",
+    "preview_image": "/uploads/products/292-preview-a59c5a6f4242.webp",
+    "description": null,
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/292-0-07644e7ec80a.webp"
+    ],
+    "attrs": {
+      "Цвет панели": "Черный",
+      "Размеры панели": "1220x3000*5мм",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  },
+  {
+    "id": "293",
+    "name": "V 30001-125S 8мм замковый панель\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+    "model": "",
+    "code_1c": "01-00000430",
+    "price": 30000,
+    "stock": 99,
+    "category_id": "4",
+    "preview_image": "/uploads/products/293-preview-5ad0039208a9.webp",
+    "description": "",
+    "incoming_stock": [],
+    "images": [
+      "/uploads/products/293-0-a33cbc344737.webp",
+      "/uploads/products/293-1-7014e38d98ef.webp"
+    ],
+    "attrs": {
+      "Размеры панели": "600*3000*8мм",
+      "Фактура панели": "Однотонная",
+      "Поверхность панели": "Матовая"
+    },
+    "category_name": "Стеновые панели",
+    "category_slug": "stenovie-paneli",
+    "section_slug": "ntpanel"
+  }
+]

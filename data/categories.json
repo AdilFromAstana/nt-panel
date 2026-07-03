@@ -1,0 +1,30 @@
+[
+  {
+    "id": "4",
+    "name": "Стеновые панели",
+    "parent_id": "1",
+    "image": "/uploads/categories/ntpanel/panels.jpg",
+    "slug": "stenovie-paneli"
+  },
+  {
+    "id": "5",
+    "name": "Луверы",
+    "parent_id": "1",
+    "image": "/uploads/categories/ntpanel/luvers.jpg",
+    "slug": "luvers"
+  },
+  {
+    "id": "6",
+    "name": "Алюминиевые профили",
+    "parent_id": "1",
+    "image": "/uploads/categories/ntpanel/profiles.jpg",
+    "slug": "alluminium-profiles"
+  },
+  {
+    "id": "7",
+    "name": "Материалы крепления",
+    "parent_id": "1",
+    "image": "/uploads/categories/ntpanel/install.jpg",
+    "slug": "materiali-kreplenia"
+  }
+]

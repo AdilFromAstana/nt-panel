@@ -1,0 +1,9 @@
+{
+  "currency": "₸",
+  "volume_discounts": [
+    { "min_amount": 100000, "percent": 5 },
+    { "min_amount": 300000, "percent": 10 },
+    { "min_amount": 700000, "percent": 15 }
+  ],
+  "note": "Скидка на объём считается от суммы заказа. Рассрочку не предлагаем."
+}
