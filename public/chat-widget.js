@@ -3,7 +3,7 @@
   window.__ntChat = true;
 
   var CART_KEY = "ntcart2";
-  var WA_PHONE = "77081237069";
+  var WA_PHONE = "77077133569";
   var history = [];
   var lastUserText = "";
   var lastProducts = [];
@@ -90,7 +90,7 @@
   var panel = document.createElement("div");
   panel.className = "ntc-panel";
   panel.innerHTML =
-    '<div class="ntc-head"><div><b>Подбор товаров</b><span>ИИ-консультант NT Panel</span></div>' +
+    '<div class="ntc-head"><div><b>Подбор товаров</b><span>ИИ-консультант</span></div>' +
     '<button class="ntc-wa" type="button" title="Менеджер в WhatsApp">' +
     '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.8.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>' +
     'WhatsApp</button>' +
@@ -141,7 +141,7 @@
   }
 
   function buildWA() {
-    var lines = ["Здравствуйте! Пишу с сайта NT Panel."];
+    var lines = ["Здравствуйте! Пишу с сайта."];
     if (lastProducts && lastProducts.length) {
       lines.push("", "Подобрал на сайте:");
       lastProducts.slice(0, 6).forEach(function (p) {
@@ -180,7 +180,7 @@
   function applyLead(a) {
     track("lead", { name: a.name || "", phone: a.phone || "", summary: a.summary || "" });
     bubble("b", "Спасибо! Передал менеджеру — он свяжется с вами. Можно сразу продолжить в WhatsApp.");
-    var lines = ["Здравствуйте! Заявка с сайта NT Panel.", "Имя: " + (a.name || "—"), "Телефон: " + (a.phone || "—")];
+    var lines = ["Здравствуйте! Заявка с сайта.", "Имя: " + (a.name || "—"), "Телефон: " + (a.phone || "—")];
     if (a.summary) lines.push("Интересует: " + a.summary);
     var url = "https://wa.me/" + WA_PHONE + "?text=" + encodeURIComponent(lines.join("\n"));
     actionRow([{ label: "Открыть WhatsApp", onClick: function () { window.open(url, "_blank"); } }]);

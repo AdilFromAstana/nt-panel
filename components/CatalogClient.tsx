@@ -12,10 +12,10 @@ type Product = {
 
 const SECTIONS = [
   { slug: "all", name: "Все товары" },
-  { slug: "ntpanel", name: "NT Panel" },
-  { slug: "ntstone", name: "NT Stone" },
-  { slug: "ntbricks", name: "NT Bricks" },
-  { slug: "ntblok", name: "NT-BLOK" },
+  { slug: "ntpanel", name: "Декоративные панели" },
+  { slug: "ntstone", name: "Гибкий камень" },
+  { slug: "ntbricks", name: "Стеклоблоки" },
+  { slug: "ntblok", name: "Стеновые блоки" },
 ];
 const PER = 24;
 const FACET_LIMIT = 6;

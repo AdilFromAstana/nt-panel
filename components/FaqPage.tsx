@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import SiteHeader from "./SiteHeader";
 import { FAQ, TOPICS, TOPIC_ORDER, type FaqItem } from "@/lib/faq-data";
 
-const WHATSAPP = "https://wa.me/77081237069";
+const WHATSAPP = "https://wa.me/77077133569";
 
 export default function FaqPage() {
   const [topic, setTopic] = useState("all");
@@ -123,7 +123,7 @@ export default function FaqPage() {
           </div>
           <div className="flex shrink-0 gap-3">
             <a href={WHATSAPP} className="rounded-xl bg-green-700 px-5 py-3 font-semibold text-white transition hover:brightness-95">Написать в WhatsApp</a>
-            <a href="tel:+77081237069" className="rounded-xl border border-gray-200 px-5 py-3 font-semibold text-gray-700 transition hover:bg-gray-50">Позвонить</a>
+            <a href="tel:+77077133569" className="rounded-xl border border-gray-200 px-5 py-3 font-semibold text-gray-700 transition hover:bg-gray-50">Позвонить</a>
           </div>
         </div>
       </main>

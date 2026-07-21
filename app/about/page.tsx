@@ -1,9 +1,9 @@
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata = {
-  title: "О компании — NTpanel.KZ",
+  title: "О компании",
   description:
-    "Производство декоративных стеновых панелей, луверов и NT-BLOK в Астане: высокоточная обработка ЧПУ, стандарт ISO 9001, реализованные объекты и сотрудничество.",
+    "Производство декоративных стеновых панелей, луверов и стеновых блоков в Астане: высокоточная обработка ЧПУ, стандарт ISO 9001, реализованные объекты и сотрудничество.",
 };
 
 const GALLERY = [
@@ -39,9 +39,9 @@ export default function AboutPage() {
               />
             </div>
             <div className="flex flex-col justify-center space-y-5 md:col-span-5">
-              <h2 className="text-2xl font-bold sm:text-3xl">Высокоточная обработка NT blok</h2>
+              <h2 className="text-2xl font-bold sm:text-3xl">Высокоточная обработка</h2>
               <p className="leading-relaxed text-gray-600">
-                Наше оборудование с ЧПУ обеспечивает погрешность не более 0.1 мм. Для линейки NT blok это означает создание элементов с идеальной геометрией, гарантирующих безупречную стыковку при монтаже.
+                Наше оборудование с ЧПУ обеспечивает погрешность не более 0.1 мм. Для нашей линейки это означает создание элементов с идеальной геометрией, гарантирующих безупречную стыковку при монтаже.
               </p>
               <div className="border-l-2 border-green-600 pl-5">
                 <p className="font-bold">Стандарт качества:</p>
@@ -96,7 +96,7 @@ export default function AboutPage() {
       </main>
 
       <footer className="mx-auto max-w-6xl border-t border-gray-100 px-4 py-10 text-center text-sm text-gray-500">
-        © 2026 NTpanel.KZ — Технологическое совершенство.
+        © 2026 — Технологическое совершенство.
       </footer>
     </div>
   );

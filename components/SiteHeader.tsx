@@ -36,12 +36,10 @@ export default function SiteHeader({ q, onSearch }: Props) {
   return (
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
-        <a href="/" className="flex shrink-0 items-center gap-2">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/icons/logo.png" className="h-8" alt="NTpanel" />
-          <span className="text-xl font-bold tracking-tight">
-            NTpanel<span className="text-green-600">.KZ</span>
-          </span>
+        <a href="/" className="flex shrink-0 items-center gap-2" aria-label="На главную">
+          <svg className="h-7 w-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10" />
+          </svg>
         </a>
 
         {search("relative hidden flex-1 md:block")}
@@ -51,7 +49,7 @@ export default function SiteHeader({ q, onSearch }: Props) {
           <a href="/catalog/hybrid" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">Каталог</a>
           <a href="/faq" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">FAQ</a>
           <a href="/about" className="hidden text-xs font-bold uppercase tracking-widest transition hover:text-green-600 md:inline">О нас</a>
-          <a href="tel:+77081237069" className="hidden text-sm font-semibold lg:inline">+7 708 123-70-69</a>
+          <a href="tel:+77077133569" className="hidden text-sm font-semibold lg:inline">+7 707 713-35-69</a>
           <a href="/favorites" className="relative" aria-label="Избранное">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -87,8 +85,8 @@ export default function SiteHeader({ q, onSearch }: Props) {
                 {l.label}
               </a>
             ))}
-            <a href="tel:+77081237069" className="py-3 font-semibold text-green-600">+7 708 123-70-69</a>
-            <a href="https://wa.me/77081237069" className="py-3 font-semibold text-green-600">Написать в WhatsApp</a>
+            <a href="tel:+77077133569" className="py-3 font-semibold text-green-600">+7 707 713-35-69</a>
+            <a href="https://wa.me/77077133569" className="py-3 font-semibold text-green-600">Написать в WhatsApp</a>
           </div>
         </nav>
       )}

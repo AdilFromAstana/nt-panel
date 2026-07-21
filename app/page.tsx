@@ -3,10 +3,10 @@ import SiteHeader from "@/components/SiteHeader";
 import HotCarousel from "@/components/HotCarousel";
 
 const SECTIONS = [
-  { slug: "ntpanel", name: "NT Panel", img: "/images/ntpanel-hero.jpg", desc: "Декоративные стеновые панели с инновационным дизайном." },
-  { slug: "ntbricks", name: "NT Bricks", img: "/images/ntbricks-hero.jpg", desc: "Современные стеклоблоки с эффектом стекла и света." },
-  { slug: "ntblok", name: "NT-BLOK", img: "/images/ntblok-hero.jpg", desc: "Инновационный строительный материал: гидро-, тепло-, шумоизоляция." },
-  { slug: "ntstone", name: "NT Stone", img: "/images/ntstone/ntstone-hero.webp", desc: "Гибкий камень и арт-цемент с натуральной фактурой для стен и фасадов." },
+  { slug: "ntpanel", name: "Декоративные панели", img: "/images/ntpanel-hero.jpg", desc: "Декоративные стеновые панели с инновационным дизайном." },
+  { slug: "ntbricks", name: "Стеклоблоки", img: "/images/ntbricks-hero.jpg", desc: "Современные стеклоблоки с эффектом стекла и света." },
+  { slug: "ntblok", name: "Стеновые блоки", img: "/images/ntblok-hero.jpg", desc: "Инновационный строительный материал: гидро-, тепло-, шумоизоляция." },
+  { slug: "ntstone", name: "Гибкий камень", img: "/images/ntstone/ntstone-hero.webp", desc: "Гибкий камень и арт-цемент с натуральной фактурой для стен и фасадов." },
 ];
 const BRANDS = ["sensata.png", "smartremont.svg", "12mesyacev.png", "compass.svg", "bi_group.png", "bazis.jpg", "zebra_coffee.png"];
 
@@ -24,14 +24,14 @@ export default function Home() {
 
       <section className="hero-bg text-white">
         <div className="max-w-6xl mx-auto px-4 py-24 md:py-32">
-          <p className="uppercase tracking-[0.3em] text-xs mb-4 text-white/80">NTpanel.KZ · Астана</p>
+          <p className="uppercase tracking-[0.3em] text-xs mb-4 text-white/80">Астана</p>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-2xl">Минимализм в интерьере</h1>
           <p className="mt-4 text-lg text-white/90 max-w-xl">
-            Декоративные стеновые панели, гибкий камень, стеклоблоки и блоки NT-BLOK. Производство в Казахстане.
+            Декоративные стеновые панели, гибкий камень, стеклоблоки и стеновые блоки. Производство в Казахстане.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="/catalog/hybrid" className="bg-white text-gray-900 px-7 py-3.5 rounded-xl font-bold hover:bg-gray-100 transition">Открыть каталог</a>
-            <a href="https://wa.me/77081237069" className="bg-green-600 text-white px-7 py-3.5 rounded-xl font-bold hover:bg-green-700 transition">Написать в WhatsApp</a>
+            <a href="https://wa.me/77077133569" className="bg-green-600 text-white px-7 py-3.5 rounded-xl font-bold hover:bg-green-700 transition">Написать в WhatsApp</a>
           </div>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="space-y-5">
               <p className="text-lg leading-relaxed text-gray-700">
-                Компания NTpanel.KZ — команда инженеров, дизайнеров и технологов. Собственное производство, точность и
+                Наша компания — команда инженеров, дизайнеров и технологов. Собственное производство, точность и
                 глубокое понимание потребностей рынка.
               </p>
               <div className="flex gap-8">
@@ -88,10 +88,10 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold mb-1">Главный шоурум — ТЦ «Корме»</h3>
               <p className="text-gray-600 mb-1">Астана, ул. Достык, 3</p>
-              <p className="text-gray-600 mb-5">+7 708 123-70-69 · ntpanelkz@mail.ru</p>
+              <p className="text-gray-600 mb-5">+7 707 713-35-69 · info@company.kz</p>
               <div className="flex flex-wrap gap-3">
-                <a href="https://wa.me/77081237069" className="bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition">WhatsApp</a>
-                <a href="https://2gis.kz/astana/search/NTpanel" target="_blank" className="bg-white border border-gray-200 px-6 py-3 rounded-xl font-bold hover:bg-gray-50 transition">2GIS</a>
+                <a href="https://wa.me/77077133569" className="bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition">WhatsApp</a>
+                <a href="https://2gis.kz/astana" target="_blank" className="bg-white border border-gray-200 px-6 py-3 rounded-xl font-bold hover:bg-gray-50 transition">2GIS</a>
               </div>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -125,32 +125,26 @@ export default function Home() {
       <footer className="border-t border-gray-100 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/icons/logo.png" className="h-7" alt="" /><span className="font-bold">NTpanel.KZ</span>
-            </div>
             <p className="text-gray-500">Декоративные панели, камень, кирпич и блоки. Производство в Казахстане.</p>
           </div>
           <div>
             <div className="font-semibold mb-2">Каталог</div>
-            <a href="/catalog/hybrid?section=ntpanel" className="block text-gray-600 hover:text-green-600">NT Panel</a>
-            <a href="/catalog/hybrid?section=ntstone" className="block text-gray-600 hover:text-green-600">NT Stone</a>
-            <a href="/catalog/hybrid?section=ntbricks" className="block text-gray-600 hover:text-green-600">NT Bricks</a>
-            <a href="/catalog/hybrid?section=ntblok" className="block text-gray-600 hover:text-green-600">NT-BLOK</a>
+            <a href="/catalog/hybrid?section=ntpanel" className="block text-gray-600 hover:text-green-600">Декоративные панели</a>
+            <a href="/catalog/hybrid?section=ntstone" className="block text-gray-600 hover:text-green-600">Гибкий камень</a>
+            <a href="/catalog/hybrid?section=ntbricks" className="block text-gray-600 hover:text-green-600">Стеклоблоки</a>
+            <a href="/catalog/hybrid?section=ntblok" className="block text-gray-600 hover:text-green-600">Стеновые блоки</a>
           </div>
           <div>
             <div className="font-semibold mb-2">Контакты</div>
             <p className="text-gray-600">Астана, ул. Достык, 3</p>
-            <a href="tel:+77081237069" className="block text-gray-600 hover:text-green-600">+7 708 123-70-69</a>
+            <a href="tel:+77077133569" className="block text-gray-600 hover:text-green-600">+7 707 713-35-69</a>
             <div className="flex gap-3 mt-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="https://wa.me/77081237069"><img src="/icons/socials/whatsapp.webp" className="h-7 w-7" alt="WhatsApp" /></a>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="https://instagram.com/ntpanel.kz"><img src="/icons/socials/instagram.webp" className="h-7 w-7" alt="Instagram" /></a>
+              <a href="https://wa.me/77077133569"><img src="/icons/socials/whatsapp.webp" className="h-7 w-7" alt="WhatsApp" /></a>
             </div>
           </div>
         </div>
-        <div className="text-center text-xs text-gray-400 pb-6">© 2026 NTpanel.KZ — Все права защищены</div>
+        <div className="text-center text-xs text-gray-400 pb-6">© 2026 — Все права защищены</div>
       </footer>
     </div>
   );
