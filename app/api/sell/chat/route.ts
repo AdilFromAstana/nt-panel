@@ -14,5 +14,16 @@ export async function POST(req: NextRequest) {
   const result = await aiChat(messages);
   const last = [...messages].reverse().find((m) => m.role === "user")?.text || "";
   logEvent("chat", { query: last, results: result.products.length });
+
+  const funnel: Record<string, string> = {
+    search_products: "sell_search",
+    calc_quantity: "sell_calc",
+    accessories_for: "sell_accessories",
+    search_faq: "sell_faq",
+  };
+  for (const t of result.toolsUsed || []) {
+    if (funnel[t]) logEvent(funnel[t], { query: last });
+  }
+
   return NextResponse.json(result);
 }

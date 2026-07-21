@@ -1,7 +1,7 @@
 import FaqPage from "@/components/FaqPage";
 
 export const metadata = {
-  title: "Вопросы и ответы — NTpanel.KZ",
+  title: "Вопросы и ответы",
   description: "Частые вопросы о стеновых панелях, луверах, профилях и монтаже: подбор, расчёт, доставка и уход.",
 };
 

@@ -6,6 +6,8 @@ const LOG = path.join(process.cwd(), "data", "analytics.jsonl");
 export const ALLOWED_EVENTS = new Set([
   "open", "card_click", "add_cart", "upsell", "whatsapp",
   "nudge_shown", "nudge_click", "exit_intent", "chat",
+  "lead", "bot_add_to_cart",
+  "sell_search", "sell_calc", "sell_accessories", "sell_faq",
 ]);
 
 export function logEvent(ev: string, data?: Record<string, unknown>) {
@@ -60,6 +62,14 @@ export function analyticsSummary() {
   }
 
   const get = (k: string) => byType.get(k) || 0;
+  const funnel: [string, number][] = [
+    ["Диалогов", chats.length],
+    ["Подбор", get("sell_search")],
+    ["Расчёт", get("sell_calc")],
+    ["Комплект", get("sell_accessories")],
+    ["В корзину (бот)", get("bot_add_to_cart")],
+    ["Лид", get("lead")],
+  ];
   return {
     total_events: events.length,
     chats: chats.length,
@@ -67,6 +77,10 @@ export function analyticsSummary() {
     whatsapp: get("whatsapp"),
     add_cart: get("add_cart"),
     upsell: get("upsell"),
+    funnel,
+    faq_answers: get("sell_faq"),
+    leads: get("lead"),
+    bot_add_to_cart: get("bot_add_to_cart"),
     nudge_shown: get("nudge_shown"),
     nudge_click: get("nudge_click"),
     exit_intent: get("exit_intent"),

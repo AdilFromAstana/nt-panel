@@ -2,8 +2,8 @@
 
 export default function WhatsAppPodborka() {
   function open() {
-    const txt = "Здравствуйте! Интересует подборка с сайта NT Panel: " + window.location.href;
-    window.open("https://wa.me/77081237069?text=" + encodeURIComponent(txt), "_blank");
+    const txt = "Здравствуйте! Интересует подборка с сайта: " + window.location.href;
+    window.open("https://wa.me/77077133569?text=" + encodeURIComponent(txt), "_blank");
   }
   return (
     <button

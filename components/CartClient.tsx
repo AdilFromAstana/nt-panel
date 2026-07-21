@@ -9,7 +9,7 @@ import { IconCart } from "./Icons";
 type Tier = { min_amount: number; percent: number };
 
 const fmt = (n: number) => Number(n || 0).toLocaleString("ru-RU") + " ₸";
-const WA = "77081237069";
+const WA = "77077133569";
 
 function discountFor(amount: number, tiers: Tier[]): number {
   let pct = 0;

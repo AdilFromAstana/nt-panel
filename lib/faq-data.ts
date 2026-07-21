@@ -90,3 +90,18 @@ export const FAQ: FaqItem[] = [
   { scope: "product", pid: "50", topic: "tovar", q: "За сколько схватывается клей SOUDAL 600 г?", a: "Первичное схватывание 10–15 мин, полная прочность — 24 ч. До схватывания положение панели можно поправить." },
   { scope: "product", pid: "50", topic: "podbor", q: "На сколько м² хватит одной тубы SOUDAL 600 г?", a: "В среднем 2–3 м² при нанесении точками/змейкой. На тяжёлые панели расход выше — берите с запасом." },
 ];
+
+export function searchFaq(query: string, limit = 3): { q: string; a: string; topic: string }[] {
+  const words = String(query || "").toLowerCase().split(/[^a-zа-я0-9]+/i).filter((w) => w.length >= 3);
+  if (!words.length) return [];
+  return FAQ.map((f) => {
+    const hay = (f.q + " " + f.a).toLowerCase();
+    let score = 0;
+    for (const w of words) if (hay.includes(w)) score++;
+    return { f, score };
+  })
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((x) => ({ q: x.f.q, a: x.f.a, topic: x.f.topic }));
+}

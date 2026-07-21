@@ -3,7 +3,7 @@
   window.__ntChat = true;
 
   var CART_KEY = "ntcart2";
-  var WA_PHONE = "77081237069";
+  var WA_PHONE = "77077133569";
   var history = [];
   var lastUserText = "";
   var lastProducts = [];
@@ -90,7 +90,7 @@
   var panel = document.createElement("div");
   panel.className = "ntc-panel";
   panel.innerHTML =
-    '<div class="ntc-head"><div><b>Подбор товаров</b><span>ИИ-консультант NT Panel</span></div>' +
+    '<div class="ntc-head"><div><b>Подбор товаров</b><span>ИИ-консультант</span></div>' +
     '<button class="ntc-wa" type="button" title="Менеджер в WhatsApp">' +
     '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.8.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>' +
     'WhatsApp</button>' +
@@ -106,10 +106,10 @@
   var body = panel.querySelector(".ntc-body");
   var input = panel.querySelector("input");
   var EXAMPLES = [
-    "Панели в наличии 20–30к",
-    "Гибкий камень дешевле 15000",
-    "Белые стеновые панели",
-    "Что есть из стеклоблоков",
+    "Панели в гостиную",
+    "Что-то в ванную (влагостойкое)",
+    "Убрать эхо в комнате",
+    "Рассчитать на мою площадь",
   ];
 
   function fmtPrice(n) { return (n || 0).toLocaleString("ru-RU") + " ₸"; }
@@ -120,15 +120,16 @@
     return '<div class="ntc-st ntc-st-in">В наличии</div>';
   }
 
-  function addToCart(p) {
-    var cart = [];
-    try { cart = JSON.parse(localStorage.getItem(CART_KEY) || "[]"); } catch (e) {}
-    var row = cart.find(function (x) { return String(x.id) === String(p.id); });
-    if (row) { row.qty = (row.qty || 1) + 1; }
-    else { cart.push({ id: p.id, name: p.name, price: p.price, preview_image: p.preview_image, qty: 1 }); }
-    localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  function cartAdd(id, qty) {
+    var c = {};
+    try { c = JSON.parse(localStorage.getItem(CART_KEY) || "{}"); } catch (e) { c = {}; }
+    if (!c || typeof c !== "object" || Array.isArray(c)) c = {};
+    var q = Math.max(1, qty || 1);
+    c[id] = (typeof c[id] === "number" ? c[id] : 0) + q;
+    localStorage.setItem(CART_KEY, JSON.stringify(c));
     window.dispatchEvent(new Event("ntcart-change"));
   }
+  function addToCart(p) { cartAdd(p.id, 1); }
 
   function bubble(role, text) {
     var d = document.createElement("div");
@@ -140,7 +141,7 @@
   }
 
   function buildWA() {
-    var lines = ["Здравствуйте! Пишу с сайта NT Panel."];
+    var lines = ["Здравствуйте! Пишу с сайта."];
     if (lastProducts && lastProducts.length) {
       lines.push("", "Подобрал на сайте:");
       lastProducts.slice(0, 6).forEach(function (p) {
@@ -156,6 +157,34 @@
   }
 
   function openWA() { track("whatsapp", { q: lastUserText }); window.open(buildWA(), "_blank"); }
+
+  function handleActions(actions) {
+    if (!actions || !actions.length) return;
+    actions.forEach(function (a) {
+      if (!a || !a.type) return;
+      if (a.type === "add_to_cart") applyAddToCart(a.items);
+      else if (a.type === "lead") applyLead(a);
+    });
+  }
+  function applyAddToCart(items) {
+    if (!items || !items.length) return;
+    var qty = 0;
+    items.forEach(function (it) {
+      if (it && it.id) { var q = Math.max(1, it.qty || 1); cartAdd(it.id, q); qty += q; }
+    });
+    if (!qty) return;
+    track("bot_add_to_cart", { positions: items.length, qty: qty });
+    bubble("b", "Добавил в корзину. Оформить заказ?");
+    actionRow([{ label: "Перейти в корзину", onClick: function () { location.href = "/cart"; } }]);
+  }
+  function applyLead(a) {
+    track("lead", { name: a.name || "", phone: a.phone || "", summary: a.summary || "" });
+    bubble("b", "Спасибо! Передал менеджеру — он свяжется с вами. Можно сразу продолжить в WhatsApp.");
+    var lines = ["Здравствуйте! Заявка с сайта.", "Имя: " + (a.name || "—"), "Телефон: " + (a.phone || "—")];
+    if (a.summary) lines.push("Интересует: " + a.summary);
+    var url = "https://wa.me/" + WA_PHONE + "?text=" + encodeURIComponent(lines.join("\n"));
+    actionRow([{ label: "Открыть WhatsApp", onClick: function () { window.open(url, "_blank"); } }]);
+  }
 
   function actionRow(items) {
     var c = document.createElement("div");
@@ -225,7 +254,7 @@
   function greet() {
     if (greeted) return;
     greeted = true;
-    bubble("b", "Здравствуйте! Опишите, что ищете — подберу из нашего каталога. Например:");
+    bubble("b", "Здравствуйте! Помогу подобрать под вашу задачу. Какое помещение оформляете — гостиная, ванная, кафе?");
     showChips();
   }
 
@@ -255,6 +284,7 @@
         bubble("b", reply);
         history.push({ role: "model", text: reply });
         renderCards(data.products);
+        handleActions(data.actions);
       })
       .catch(function () {
         typing.remove();
